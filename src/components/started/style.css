@@ -1,0 +1,53 @@
+.section {
+    position: relative;
+    overflow: hidden;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #585d65;
+    z-index: 12;
+}
+.section, .started {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    position: relative;
+    overflow: visible;
+    height: 100vh;
+    z-index: 11;
+}
+.centrize {
+    display: table !important;
+    table-layout: fixed !important;
+    height: 100% !important;
+    position: relative !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.full-width {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+.vertical-center {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+  .h-title {
+    margin: 0 0 0 -11vw;
+    padding: 4.2vw;
+    font-size: 4.2vw;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #FFF;
+    background: #373b40;
+    word-break: break-word;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    border-radius: 264px;
+    -moz-border-radius: 264px;
+    -webkit-border-radius: 264px;
+    -khtml-border-radius: 264px;
+}

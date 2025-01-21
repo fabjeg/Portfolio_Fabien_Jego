@@ -11,7 +11,7 @@
 .section, .started {
     margin: 0;
     padding-top: 0;
-    padding-left: 0;
+    padding-left: 30px;
     padding-bottom: 0;
     position: relative;
     overflow: visible;
@@ -50,4 +50,15 @@
     -moz-border-radius: 264px;
     -webkit-border-radius: 264px;
     -khtml-border-radius: 264px;
+}
+.h2-title{
+    margin-top: 10%;
+    font-size: 45px;
+    line-break: 10px;
+}
+article{
+    margin-top: 10%;
+}
+.buton-started{
+    margin-top: 10%;
 }

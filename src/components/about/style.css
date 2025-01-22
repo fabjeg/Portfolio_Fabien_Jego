@@ -1,3 +1,4 @@
+
 .h3-title {
   font-family: "Poppins";
   font-size: 45px;
@@ -6,4 +7,14 @@
 .article-about {
   margin: 0 0 10% 0;
   font-size: 17px;
+}
+.section, .started {
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 54px;
+  position: relative;
+  overflow: visible;
+  height: 100%;
+  z-index: 11;
 }

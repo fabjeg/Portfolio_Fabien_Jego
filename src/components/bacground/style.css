@@ -36,3 +36,15 @@
     mix-blend-mode: unset;
 }
 
+@media (max-width: 1199px) {
+    .background-bg {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+    }
+        .background-filter.circle {
+            clip-path: circle(100% at 50% 0%);
+            -webkit-clip-path: circle(100% at 40% 40%);
+        }
+    
+}

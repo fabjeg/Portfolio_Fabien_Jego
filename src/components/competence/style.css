@@ -1,0 +1,49 @@
+.title-competence h4 {
+  font-size: 45px;
+  margin: 10% 0 10% 0;
+}
+.container-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 20px 2% 2% 3%;
+  padding: 1%;
+  border-radius: 1rem;
+}
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+.icon-image {
+  border-radius: 1rem;
+  border: 2px solid #68e0cf;
+  width: 200px;
+  transition: filter 0.3s ease;
+}
+.icon-image:hover {
+  filter: grayscale(100%);
+}
+.icon-content {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  background-color: #68e0cf;
+  color: white;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+  border-radius: 1rem;
+}
+
+.icon-wrapper:hover .icon-content {
+  opacity: 1;
+}

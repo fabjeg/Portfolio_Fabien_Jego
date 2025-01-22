@@ -1,0 +1,21 @@
+.section.projects {
+  height: 100%;
+}
+.card-content img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+}
+.cards {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.h5-title{
+    margin-top: 10%;
+    font-size: 45px;
+}

@@ -14,16 +14,6 @@ const findImages = (name) => {
 
 const portfolio = [
   {
-    id: "c67ab8a7",
-    name: "Booki",
-    image: [Booki],
-    text: "En tant que développeur web chez Booki, j'ai intégré l'interface du site à l'aide de HTML et CSS, en collaboration avec Sarah, la CTO, et Loïc, l'UI designer. J'ai travaillé sur des maquettes complètes pour les versions desktop, tablette et mobile, en respectant les spécifications et contraintes techniques. J'ai reçu une structure de fichiers préparée pour démarrer",
-    code: "https://github.com/fabjeg/Booki-HTML-CSS",
-    site: "https://fabjeg.github.io/Booki-HTML-CSS/",
-    competences: ["HTML", "CSS", "Figma"],
-    images: findImages("Booki"),
-  },
-  {
     id: "b9123946",
     name: "OhMyFood",
     image: [Ohmyfood],
@@ -32,16 +22,6 @@ const portfolio = [
     site: "https://fabjeg.github.io/ohmyfood/",
     competences: ["HTML", "SASS", "Figma"],
     images: findImages("OhMyFood"),
-  },
-  {
-    id: "46d188c5",
-    name: "Portfolio architecte",
-    image: [Sophiebluel],
-    text: "Chez ArchiWebos, j'ai contribué à la conception du site portfolio de Sophie Bluel, architecte d'intérieur. Mon rôle en tant que développeur front-end a impliqué la création de la page de présentation, de la page de connexion de l'administrateur, et d'une modale d'upload de médias.",
-    code: "https://github.com/fabjeg/Portfolio-architecte-sophie-bluel-p6",
-    site: "https://portfolio.fabwebprojects.fr/projetformation/Sophie-bluel/",
-    competences: ["HTML", "CSS", "Javascript", "Swagger"],
-    images: findImages("Portfolio architecte"),
   },
   {
     id: "7af00cd6",
@@ -91,7 +71,27 @@ const portfolio = [
     site: "https://fabjeg.github.io/ArgentBank-Redux/",
     competences: ["React", "Redux", "MongoDB"],
     images: findImages("Argent Bank Redux"),
-  }
+  },
+  {
+    id: "c67ab8a7",
+    name: "Booki",
+    image: [Booki],
+    text: "En tant que développeur web chez Booki, j'ai intégré l'interface du site à l'aide de HTML et CSS, en collaboration avec Sarah, la CTO, et Loïc, l'UI designer. J'ai travaillé sur des maquettes complètes pour les versions desktop, tablette et mobile, en respectant les spécifications et contraintes techniques. J'ai reçu une structure de fichiers préparée pour démarrer",
+    code: "https://github.com/fabjeg/Booki-HTML-CSS",
+    site: "https://fabjeg.github.io/Booki-HTML-CSS/",
+    competences: ["HTML", "CSS", "Figma"],
+    images: findImages("Booki"),
+  },
+  {
+    id: "46d188c5",
+    name: "Portfolio architecte",
+    image: [Sophiebluel],
+    text: "Chez ArchiWebos, j'ai contribué à la conception du site portfolio de Sophie Bluel, architecte d'intérieur. Mon rôle en tant que développeur front-end a impliqué la création de la page de présentation, de la page de connexion de l'administrateur, et d'une modale d'upload de médias.",
+    code: "https://github.com/fabjeg/Portfolio-architecte-sophie-bluel-p6",
+    site: "https://portfolio.fabwebprojects.fr/projetformation/Sophie-bluel/",
+    competences: ["HTML", "CSS", "Javascript", "Swagger"],
+    images: findImages("Portfolio architecte"),
+  },
 ];
 
 export default portfolio;

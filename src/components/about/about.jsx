@@ -3,7 +3,7 @@ import './style.css'
 
 export function About () {
     return (
-        <div className="section">
+        <div className="section about">
             <h3 className="h3-title">
                 About
             </h3>

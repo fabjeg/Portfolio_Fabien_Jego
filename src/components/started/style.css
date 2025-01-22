@@ -12,10 +12,9 @@
     margin: 0;
     padding-top: 0;
     padding-left: 30px;
-    padding-bottom: 0;
     position: relative;
     overflow: visible;
-    height: 100vh;
+    height: 100%;
     z-index: 11;
 }
 .centrize {
@@ -36,7 +35,7 @@
     vertical-align: middle !important;
 }
   .h-title {
-    margin: 0 0 0 -11vw;
+    margin: 30% 0 0 -11vw;
     padding: 4.2vw;
     font-size: 4.2vw;
     line-height: 1.2;
@@ -54,7 +53,6 @@
 .h2-title{
     margin-top: 10%;
     font-size: 45px;
-    line-break: 10px;
 }
 article{
     margin-top: 10%;
@@ -62,3 +60,25 @@ article{
 .buton-started{
     margin-top: 10%;
 }
+
+@media (max-width: 1199px) {
+   .h-title {
+        margin: 0 auto;
+        margin-top: -165px;
+        padding: 33px 0px 25px 0px;
+        width: 80%;
+        background: #373b40;
+        border-radius: 360px 360px 0 0;
+        -moz-border-radius: 360px 360px 0 0;
+        -webkit-border-radius: 360px 360px 0 0;
+        -khtml-border-radius: 360px 360px 0 0;
+        text-align: center;
+    }
+    .h-title{
+        font-size: 45px;
+    }
+    .h2-title {
+        line-height: 1.4;
+    }
+    }
+

@@ -60,6 +60,7 @@ button {
     cursor: pointer;
     display: block;
     left: -45%;
+    margin-top: 10%;
   }
   
   .burger input {

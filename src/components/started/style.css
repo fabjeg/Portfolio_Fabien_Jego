@@ -6,7 +6,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     border-bottom: 1px solid #585d65;
-    z-index: 12;
+    width: 94%;
 }
 .section, .started {
     margin: 0;
@@ -15,7 +15,6 @@
     position: relative;
     overflow: visible;
     height: 100%;
-    z-index: 11;
 }
 .centrize {
     display: table !important;
@@ -53,6 +52,8 @@
 .h2-title{
     margin-top: 10%;
     font-size: 45px;
+    text-decoration: underline;
+    line-height: 1.2;
 }
 article{
     margin-top: 10%;
@@ -62,6 +63,9 @@ article{
 }
 
 @media (max-width: 1199px) {
+    .section{
+        width: 100%;
+    }
    .h-title {
         margin: 0 auto;
         margin-top: -165px;

@@ -1,6 +1,8 @@
+import { Footer } from '../footer/footer'
 import { About } from '../about/about'
 import { Background } from '../bacground/background'
 import { Competence } from '../competence/competence'
+import { Form } from '../form/form'
 import { Project } from '../project/project'
 import { Started } from '../started/started'
 import './style.css'
@@ -13,6 +15,8 @@ export function Wrapper () {
             <About/>
             <Competence/>
             <Project/>
+            <Form/>
+            <Footer/>
         </div>
     )
 }

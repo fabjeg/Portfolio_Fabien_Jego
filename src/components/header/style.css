@@ -1,4 +1,8 @@
   /* Styles pour le header */
+  html {
+    scroll-behavior: smooth;
+  }
+  
   .header {
     padding: 0 0 0 8px;
     position: absolute;
@@ -32,7 +36,13 @@
   ul li {
     padding: 5px;
   }
-  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: #68e0cf;
+  }
   /* Navbar */
   
   .menu_list {
@@ -74,7 +84,7 @@
     font-size: 20px;
     font-weight: 500;
   }
-  .mobileNav_menu_list li:hover{
+  .mobileNav_open li:hover{
     color: #68e0cf;
   }
   
@@ -94,9 +104,9 @@
   }
   
   /* Media Queries */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1190px) {
     .header{
-        background: transparent;
+        display: none;
     }
     /* Navbar Media Queries */
     .menu_list {

@@ -1,24 +1,29 @@
-
-  .carousel-img{
-    width: 70%;
-  }
-  .carousel-btn {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #333;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-.carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.carousel-img{
+  width: 70%;
+  border-radius: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  opacity: 0.8;
+  object-fit: cover;
 }
-.carousel-arrow{
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel-arrow {
   border: none;
   background: transparent;
   font-size: 40px;
+  color: white;
 }

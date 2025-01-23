@@ -16,25 +16,22 @@ export function MobileNavbar() {
 
   return (
     <div className="buttonBurguer">
-          <ButtonBurguer
-        onClick={handleMobileNavClick}
-      />
+      <ButtonBurguer onClick={handleMobileNavClick} />
       <nav className="mobileNav_container">
-      <div className="mobileNav_menu_container">
-        <ul
-          className={`${
+        <div className="mobileNav_menu_container">
+          <ul
+            className={`${
               mobileNavIsOpen ? "mobileNav_open" : "mobileNav_closed"
             } mobileNav_menu_list`}
-            >
-          <li>Home</li>
-          <li>About</li>
-          <li>compétences</li>
-          <li>projets</li>
-          <li>contact</li>
-        </ul>
-      </div>
-    </nav>
-            </div>
+          >
+             <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
-};
-
+}

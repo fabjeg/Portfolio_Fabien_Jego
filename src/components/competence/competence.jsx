@@ -31,7 +31,7 @@ export function Competence() {
 
     return (
         <div className="title-competence section" >
-            <h4>Compétences</h4>
+            <h4 id='competences'>Compétences</h4>
             <div className="border-title"></div>
             <div className="container">
                 <div className="container-icons">

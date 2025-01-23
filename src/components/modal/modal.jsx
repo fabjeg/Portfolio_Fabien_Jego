@@ -1,9 +1,9 @@
-import './style.css';
-import PropTypes from 'prop-types';
+import "./style.css";
+import PropTypes from "prop-types";
 import picturesSlide from "../../assets/projets/dataSlide";
 import { useState } from "react";
-import { Slide } from '../slide/slide';
-import { ButtonModal } from '../buttons/button-modal';
+import { Slide } from "../slide/slide";
+import { ButtonModal } from "../buttons/button-modal";
 
 export function Modal({ project, setIsModalOpen }) {
   const projectData = picturesSlide.find((proj) => proj.name === project.name);
@@ -22,7 +22,16 @@ export function Modal({ project, setIsModalOpen }) {
             setCurrentIndex={setCurrentIndex}
           />
         </div>
-        <p className="modal-description">{project.text}</p>
+        <div className="container-modal-description">
+          <p className="modal-description">{project.text}</p>
+        </div>
+        <div className="container-comp">
+          {project.competences.map((comp, idx) => (
+            <span key={idx} className="span-competences">
+              {comp}
+            </span>
+          ))}
+        </div>
         <ButtonModal code={project.code} site={project.site} />
       </div>
     </div>

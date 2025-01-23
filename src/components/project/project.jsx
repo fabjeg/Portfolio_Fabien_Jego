@@ -2,28 +2,26 @@ import "./style.css";
 import portfolio from "../../assets/projets/data";
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { Modal } from "../modal/modal";  // Assurez-vous d'importer le composant Modal
+import { Modal } from "../modal/modal";  
 
 export function Project() {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Gère l'état du modal
-  const [selectedProject, setSelectedProject] = useState(null); // Gère le projet sélectionné pour le modal
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [selectedProject, setSelectedProject] = useState(null); 
 
   const handleCardClick = (port) => {
-    console.log('Proposition de projet:', port); // Débogue ici pour voir les données avant de les mettre à jour
-    setSelectedProject(port); // Met à jour l'état du projet sélectionné
-    setIsModalOpen(true); // Ouvre le modal
+    setSelectedProject(port); 
+    setIsModalOpen(true); 
   };
-  console.log('isModalOpen:', isModalOpen);
 
   return (
     <div className="section projects">
-      <h5 className="h5-title">Projets</h5>
+      <h5 className="h5-title" id="projets">Projets</h5>
       <div className="cards">
         {portfolio.map((port, index) => (
           <Card3D
           key={index}
           image={Array.isArray(port.image) ? port.image[0] : port.image} 
-          onClick={() => handleCardClick(port)} // Ouvre le modal au clic
+          onClick={() => handleCardClick(port)} 
           />
         ))}
       </div>
@@ -63,7 +61,7 @@ function Card3D({ image, onClick }) {
       style={style}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      onClick={onClick} // Ajoute l'événement de clic pour ouvrir le modal
+      onClick={onClick} 
     >
       <div className="card-content">
         <img src={image} alt="project-pictures" className="card-image" />
@@ -74,5 +72,5 @@ function Card3D({ image, onClick }) {
 
 Card3D.propTypes = {
   image: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired, // Assure-toi de définir onClick comme une fonction
+  onClick: PropTypes.func.isRequired,
 };

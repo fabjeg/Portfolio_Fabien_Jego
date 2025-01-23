@@ -4,7 +4,7 @@ import './style.css'
 export function About () {
     return (
         <div className="section about">
-            <h3 className="h3-title">
+            <h3 className="h3-title" id='about'>
                 About
             </h3>
             <article className='article-about'>Je suis actuellement à la recherche de nouvelles opportunités

@@ -19,6 +19,7 @@
 .h5-title{
     margin-top: 10%;
     font-size: 45px;
+    text-decoration: underline;
 }
 /* Conteneur global des cartes */
 .cards {

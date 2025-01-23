@@ -3,6 +3,7 @@
   font-family: "Poppins";
   font-size: 45px;
   margin: 10% 0 10% 0;
+  text-decoration: underline;
 }
 .article-about {
   margin: 0 0 10% 0;
@@ -16,5 +17,5 @@
   position: relative;
   overflow: visible;
   height: 100%;
-  z-index: 11;
+  /* z-index: 11; */
 }

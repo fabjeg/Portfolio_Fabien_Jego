@@ -1,6 +1,7 @@
 import "./style.css";
 import SmoothScroll from 'smooth-scroll';
 import { useEffect } from "react";
+import { ButtonCv } from "../buttons/button-cv";
 
 export function Header() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export function Header() {
           <li><a href="#competences">Compétences</a></li>
           <li><a href="#projets">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><ButtonCv/></li>
         </ul>
       </div>
     </nav>

@@ -15,13 +15,13 @@
   }
   
   button span {
-    display: block;
+    /* display: block; */
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
   }
   
   button svg {
-    display: block;
+    /* display: block; */
     transform-origin: center center;
     transition: transform 0.3s ease-in-out;
   }
@@ -58,7 +58,7 @@
     height: 30px;
     background: transparent;
     cursor: pointer;
-    display: block;
+    /* display: block; */
     left: -45%;
     margin-top: 10%;
   }
@@ -68,7 +68,7 @@
   }
   
   .burger span {
-    display: block;
+    /* display: block; */
     position: absolute;
     height: 4px;
     width: 100%;
@@ -219,8 +219,7 @@
   transform: translateY(-70px);
 }
 /*-----Button-scroll-top----*/
-/* From Uiverse.io by satyamchaudharydev */ 
-.button-scroll-top {
+/* .button-scroll-top {
   width: 140px;
   height: 56px;
   overflow: hidden;
@@ -297,7 +296,6 @@
 .button-scroll-top:hover .clone > :nth-child(4) {
   transition-delay: 0.3s;
 }
-/* icon style and hover */
 .button-scroll-top svg {
   width: 20px;
   right: 0;
@@ -308,4 +306,143 @@
 
 .button-scroll-top:hover svg {
   transform: translateY(-50%) rotate(-90deg);
+} */
+ .container_mouse{
+  text-align: center;
+ }
+.mouse-btn {
+  margin: 10px auto;
+  width: 40px;
+  height: 80px;
+  border: 3px solid #68e0cf;
+  border-radius: 20px;
+  display: flex;
+}
+
+.mouse-scroll {
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  background: #68e0cf;
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite;
+}
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+/*-----Button-Cv-----*/
+/* From Uiverse.io by doniaskima */ 
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #585D65;
+  background-image: none;
+  cursor: pointer;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  /* display: block; */
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+  border-radius: 999px;
+  box-sizing: border-box;
+  /* display: block; */
+  font-weight: 900;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-transform: uppercase;
+  color: #68e0cf;
+}
+
+.btn-53 .original {
+  background: transparent;
+  color: white;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
 }

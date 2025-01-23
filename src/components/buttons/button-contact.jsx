@@ -1,8 +1,13 @@
 import './style.css'
 
 export function ButtonContact () {
+    const scrollToContact = () => {
+      const contactSection = document.getElementById('contact');
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return(
-        <button className='button-contact'>
+        <button className='button-contact' onClick={scrollToContact}>
   <div className="svg-wrapper-1">
     <div className="svg-wrapper">
       <svg
@@ -19,7 +24,7 @@ export function ButtonContact () {
       </svg>
     </div>
   </div>
-  <span>Send</span>
+  <span>Contact</span>
 </button>
 
     )

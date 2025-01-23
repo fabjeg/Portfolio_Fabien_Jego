@@ -6,7 +6,7 @@
     width: 140px;
     height: 1px;
     z-index: 99;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
 }
 .container-footer:before {
     content: '';

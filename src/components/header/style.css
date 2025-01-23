@@ -1,21 +1,17 @@
-.header{
+  /* Styles pour le header */
+  .header {
     padding: 0 0 0 8px;
-    position: fixed;
+    position: absolute;
     left: 50px;
     right: 50px;
     top: 40px;
     height: 80px;
-    z-index: 100;
+    z-index: 500; /* Réduit le z-index pour éviter l'interférence avec le modal */
     background: #585d65;
     border-radius: 80px;
-    -moz-border-radius: 80px;
-    -webkit-border-radius: 80px;
-    -khtml-border-radius: 80px;
     transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
-    -moz-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
-    -webkit-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
-    -o-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
-}
+  }
+  
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -25,6 +21,7 @@
   body {
     padding: 0px;
     margin: 0px;
+    position: relative;
   }
   /* Global Styles */
   ul {
@@ -33,18 +30,19 @@
   }
   
   ul li {
-    padding: 10px;
+    padding: 5px;
   }
   
   /* Navbar */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .menu_list {
     display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .menu_list li:hover{
+    color: #68e0cf;
   }
   
   /* Mobile Navbar */
@@ -70,9 +68,14 @@
     margin: auto;
     background: transparent;
     border-radius: 4px;
-    color: #68e0cf;
+    color: white;
     transition: ease all 0.4s;
     z-index: 100;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .mobileNav_menu_list li:hover{
+    color: #68e0cf;
   }
   
   .mobileNav_container {
@@ -96,7 +99,7 @@
         background: transparent;
     }
     /* Navbar Media Queries */
-    .navbar {
+    .menu_list {
       display: none;
     }
     /* Mobile Navbar Media Queries */

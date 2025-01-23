@@ -2,7 +2,7 @@ import './style.css'
 
 export function ButtonContact () {
     return(
-        <button>
+        <button className='button-contact'>
   <div className="svg-wrapper-1">
     <div className="svg-wrapper">
       <svg

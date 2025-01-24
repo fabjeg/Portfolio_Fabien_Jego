@@ -1,4 +1,5 @@
 import { ButtonContact } from "../buttons/button-contact";
+import { ButtonCv } from "../buttons/button-cv";
 import "./style.css";
 
 export function Started() {
@@ -6,9 +7,14 @@ export function Started() {
     <div className="section started">
       <div className="centrize full-width">
         <div className="vertical-center">
-          <h1 className="h-title">
-            Fabien <br /> JÉGO
-          </h1>
+          <div className="container-title-cv">
+            <h1 className="h-title">
+              Fabien <br /> JÉGO
+            </h1>
+            <div className="buttonCv">
+              <ButtonCv />
+            </div>
+          </div>
           <h2 className="h2-title">Développeur front-end</h2>
           <article>
             Je m&apos;appelle Fabien Jego et je suis un développeur web

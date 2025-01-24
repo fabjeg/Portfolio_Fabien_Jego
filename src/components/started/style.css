@@ -1,99 +1,114 @@
 .section {
-    position: relative;
-    overflow: hidden;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    border-bottom: 1px solid #585d65;
-    width: 94%;
+  position: relative;
+  overflow: hidden;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #585d65;
+  width: 94%;
 }
 @media only screen and (max-width: 1220px) {
-    .section{
-        width: 90%;
-    }
+  .section {
+    width: 90%;
+  }
 }
-@media only screen and (max-width: 1400px)  {
-    .section{
-        width: 92%;
-    }
+@media only screen and (max-width: 1400px) {
+  .section {
+    width: 92%;
+  }
 }
-.section, .started {
-    margin: 0;
-    padding-top: 0;
-    padding-left: 30px;
-    position: relative;
-    overflow: visible;
-    height: 100%;
+.section,
+.started {
+  margin: 0;
+  padding-top: 0;
+  padding-left: 30px;
+  position: relative;
+  overflow: visible;
+  height: 100%;
 }
 .centrize {
-    display: table !important;
-    table-layout: fixed !important;
-    height: 100% !important;
-    position: relative !important;
-    top: 0;
-    left: 0;
-    z-index: 2;
+  display: table !important;
+  table-layout: fixed !important;
+  height: 100% !important;
+  position: relative !important;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 .full-width {
-    max-width: 100% !important;
-    width: 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 .vertical-center {
-    display: table-cell !important;
-    vertical-align: middle !important;
+  display: table-cell !important;
+  vertical-align: middle !important;
 }
-  .h-title {
-    margin: 30% 0 0 -11vw;
-    padding: 4.2vw;
-    font-size: 4.2vw;
-    line-height: 1.2;
-    font-weight: 800;
-    color: #FFF;
-    background: #373b40;
-    word-break: break-word;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-    border-radius: 264px;
-    -moz-border-radius: 264px;
-    -webkit-border-radius: 264px;
-    -khtml-border-radius: 264px;
+.h-title {
+  margin: 30% 0 0 -11vw;
+  padding: 4.2vw;
+  font-size: 4.2vw;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #fff;
+  background: #373b40;
+  word-break: break-word;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  border-radius: 264px;
+  -moz-border-radius: 264px;
+  -webkit-border-radius: 264px;
+  -khtml-border-radius: 264px;
 }
-.h2-title{
-    margin-top: 10%;
-    font-size: 45px;
-    text-decoration: underline;
-    line-height: 1.2;
+.h2-title {
+  margin-top: 10%;
+  font-size: 45px;
+  text-decoration: underline;
+  line-height: 1.2;
 }
-article{
-    margin-top: 10%;
+article {
+  margin-top: 10%;
 }
-.buton-started{
-    margin-top: 10%;
+.buton-started {
+  margin-top: 10%;
 }
-
+.buttonCv{
+  display: none;
+}
 @media (max-width: 1199px) {
-    .section{
-        width: 100%;
-    }
-   .h-title {
-        margin: 0 auto;
-        margin-top: -165px;
-        padding: 33px 0px 25px 0px;
-        width: 80%;
-        background: #373b40;
-        border-radius: 360px 360px 0 0;
-        -moz-border-radius: 360px 360px 0 0;
-        -webkit-border-radius: 360px 360px 0 0;
-        -khtml-border-radius: 360px 360px 0 0;
-        text-align: center;
-    }
-    .h-title{
-        font-size: 45px;
-    }
-    .h2-title {
-        line-height: 1.4;
-        text-align: center;
-    }
-    }
-
+  .section {
+    width: 100%;
+  }
+  .h-title {
+    margin: 0 auto;
+    margin-top: -165px;
+    padding: 33px 0px 25px 0px;
+    width: 80%;
+    background: #373b40;
+    border-radius: 360px 360px 0 0;
+    -moz-border-radius: 360px 360px 0 0;
+    -webkit-border-radius: 360px 360px 0 0;
+    -khtml-border-radius: 360px 360px 0 0;
+    text-align: center;
+  }
+  .h-title {
+    font-size: 45px;
+  }
+  .h2-title {
+    line-height: 1.4;
+    text-align: center;
+  }
+  .container-title-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttonCv{
+    display: block;
+  }
+  .original{
+    background-color: #373b40;
+    border: 2px solid #68e0cf;
+    border-radius: 10px ;
+  }
+}

@@ -3,12 +3,13 @@ import "./style.css";
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import { ConfirmationModal } from "../modalForm/modalForm";
+import { ButtonSend } from "../buttons/button-send";
 
 export function FormTest() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isValid },
+    formState: { errors,  },
     reset,
   } = useForm({ mode: "onTouched" });
 
@@ -147,9 +148,7 @@ export function FormTest() {
             )}
           </div>
           <div className="container-button-val">
-            <button type="submit" className="submit-button" disabled={!isValid}>
-              Envoyer
-            </button>
+            <ButtonSend/>
           </div>
         </form>
 

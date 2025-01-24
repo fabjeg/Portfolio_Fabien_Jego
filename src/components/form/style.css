@@ -32,13 +32,18 @@
 .input:focus, .input:valid,
 .textarea-form:focus, .textarea-form:valid {
   outline: none;
-  border: 1.5px solid #1a73e8;
+  border: 1.5px solid #68e0cf;
 }
 
 .input:focus ~ .user-label, .input:valid ~ .user-label,
 .textarea-form:focus ~ .user-label, .textarea-form:valid ~ .user-label {
   transform: translateY(-50%) scale(0.8);
-  background-color: #212121;
+  background-color: #373B40;
   padding: 0 0.2em;
   color: #68E0CF;
+  font-size: 20px;
+}
+.container-button-val{
+  display: flex;
+  justify-content: center;
 }

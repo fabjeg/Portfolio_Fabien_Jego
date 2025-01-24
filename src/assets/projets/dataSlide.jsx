@@ -16,11 +16,11 @@ import omf3 from "../images/slide/ohMyFood/ohmyfood(3).png";
 import booki from "../images/slide/booki/booki.png";
 import booki2 from "../images/slide/booki/booki(2).png";
 import booki3 from "../images/slide/booki/booki(3).png";
-import sophieB from '../images/slide/sophieBluel/SophieBluel.png'
-import sophieB5 from '../images/slide/sophieBluel/SophieBluel(5).png'
-import sophieB3 from '../images/slide/sophieBluel/SophieBluel(3).png'
-import sophieB2 from '../images/slide/sophieBluel/SophieBluel(2).png'
-import sophieB4 from '../images/slide/sophieBluel/SophieBluel(4).png'
+import sophieB from '../images/slide/sophieBluel/SophieBluel.webp'
+import sophieB5 from '../images/slide/sophieBluel/SophieBluel(5).webp'
+import sophieB3 from '../images/slide/sophieBluel/SophieBluel(3).webp'
+import sophieB2 from '../images/slide/sophieBluel/SophieBluel(2).webp'
+import sophieB4 from '../images/slide/sophieBluel/SophieBluel(4).webp'
 import argenB from "../images/slide/argentBank/argentBank.png"
 import argenB1 from "../images/slide/argentBank/argentBank(1).png"
 

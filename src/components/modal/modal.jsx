@@ -15,16 +15,27 @@ export function Modal({ project, setIsModalOpen }) {
     <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h3 className="modal-title">{project.name}</h3>
-        <div className="modal-carousel">
-          <Slide
-            images={images}
-            currentIndex={currentIndex}
-            setCurrentIndex={setCurrentIndex}
-          />
-        </div>
+        
+        {images.length > 0 && (
+          <div className="modal-carousel">
+            <Slide
+              images={images}
+              currentIndex={currentIndex}
+              setCurrentIndex={setCurrentIndex}
+            />
+          </div>
+        )}
+
         <div className="container-modal-description">
           <p className="modal-description">{project.text}</p>
+          {project.identifier && (
+            <p className="modal-description">identifiant: {project.identifier}</p>
+          )}
+          {project.Mp && (
+            <p className="modal-description">Mot de passe: {project.Mp}</p>
+          )}
         </div>
+
         <div className="container-comp">
           {project.competences.map((comp, idx) => (
             <span key={idx} className="span-competences">
@@ -32,6 +43,7 @@ export function Modal({ project, setIsModalOpen }) {
             </span>
           ))}
         </div>
+        
         <ButtonModal code={project.code} site={project.site} />
       </div>
     </div>

@@ -17,7 +17,7 @@ export function Started() {
           </div>
           <h2 className="h2-title">Développeur front-end</h2>
           <article>
-            Je m&apos;appelle Fabien Jego et je suis un développeur web
+            Je suis un développeur web
             front-end passionné par la technologie et le développement. Diplômé
             d&apos;une formation intensive de 9 mois chez OpenClassrooms en tant
             qu&apos;intégrateur web, j&apos;ai acquis des compétences solides et

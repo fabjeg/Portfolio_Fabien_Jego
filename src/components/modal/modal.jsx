@@ -14,6 +14,9 @@ export function Modal({ project, setIsModalOpen }) {
   return (
     <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="containerButtonClose">
+        <button className="fa-solid fa-xmark buttonClose" onClick={() => setIsModalOpen(false)}/>
+        </div>
         <h3 className="modal-title">{project.name}</h3>
         
         {images.length > 0 && (

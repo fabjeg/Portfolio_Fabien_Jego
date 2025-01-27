@@ -68,9 +68,12 @@
 }
 article {
   margin-top: 10%;
+  font-size: 17px;
+  font-family: 'poppins';
 }
 .buton-started {
   margin-top: 10%;
+
 }
 .buttonCv{
   display: none;

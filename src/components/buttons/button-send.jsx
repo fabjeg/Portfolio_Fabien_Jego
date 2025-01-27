@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export function ButtonSend () {
   return (
     <StyledWrapper>
-      <button> Button
+      <button> Envoyer
       </button>
     </StyledWrapper>
   );

@@ -133,9 +133,9 @@ export function Form() {
           )}
         </div>
         <div className="container-button-val">
-          <button type="submit" className="submit-button" disabled={!isValid}>
+          {/* <button type="submit" className="submit-button" disabled={!isValid}>
             Envoyer
-          </button>
+          </button> */}
         </div>
       </form>
 

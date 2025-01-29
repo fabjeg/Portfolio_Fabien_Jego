@@ -3,12 +3,13 @@ import "./style.css";
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import { ConfirmationModal } from "../modalForm/modalForm";
+import { ButtonSend } from "../buttons/button-send";
 
 export function Form() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isValid },
+    formState: { errors,  },
     reset,
   } = useForm({ mode: "onTouched" });
 
@@ -47,101 +48,113 @@ export function Form() {
   };
 
   return (
-    <div className="section">
-      <h6 className="h6-title" id="contact">
-        Contact
-      </h6>
-      <form onSubmit={handleSubmit(sendEmail)} className="form">
-        {isModalOpen && (
-          <p className="global-error">
-            Veuillez remplir correctement tous les champs requis.
-          </p>
-        )}
-
-        <div className="form-group">
-          <div className=" input-group">
-            <label className="user-label">Nom</label>
-            <input
-              id="from_name"
-              className={`input-form input${errors.from_name ? "input-error" : ""}`}
-              {...register("from_name", { required: "Le nom est requis." })}
-             
-            />
-            {errors.from_name && (
-              <p className="error-message">{errors.from_name.message}</p>
-            )}
-          </div>
-          <div className="form-control">
-            <label htmlFor="from_email">Email</label>
-            <input
-              id="from_email"
-              className={`input-form ${errors.from_email ? "input-error" : ""}`}
-              {...register("from_email", {
-                required: "L'email est requis.",
-                pattern: {
-                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "Adresse email invalide.",
-                },
-              })}
-              placeholder="Entrez votre email"
-            />
-            {errors.from_email && (
-              <p className="error-message">{errors.from_email.message}</p>
-            )}
-          </div>
-        </div>
-
-        <div className="form-group">
-          <div className="form-control">
-            <label htmlFor="entreprise">Entreprise</label>
-            <input
-              id="entreprise"
-              className={`input-form ${errors.entreprise ? "input-error" : ""}`}
-              {...register("entreprise", {
-                required: "Le nom de l'entreprise est requis.",
-              })}
-              placeholder="Entrez le nom de l'entreprise"
-            />
-            {errors.entreprise && (
-              <p className="error-message">{errors.entreprise.message}</p>
-            )}
-          </div>
-          <div className="form-control">
-            <label htmlFor="sujet">Sujet</label>
-            <input
-              id="sujet"
-              className={`input-form ${errors.sujet ? "input-error" : ""}`}
-              {...register("sujet", { required: "Le sujet est requis." })}
-              placeholder="Entrez le sujet"
-            />
-            {errors.sujet && (
-              <p className="error-message">{errors.sujet.message}</p>
-            )}
-          </div>
-        </div>
-
-        <div className="form-control">
-          <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            className={`textarea-form ${errors.message ? "input-error" : ""}`}
-            {...register("message", { required: "Le message est requis." })}
-            placeholder="Entrez votre message"
-          />
-          {errors.message && (
-            <p className="error-message">{errors.message.message}</p>
+      <div className="section">
+        <h6 className="h6-title" id="contact">
+          Contact
+        </h6>
+        <form onSubmit={handleSubmit(sendEmail)} className="form">
+          {isModalOpen && (
+            <p className="global-error">
+              Veuillez remplir correctement tous les champs requis.
+            </p>
           )}
-        </div>
-        <div className="container-button-val">
-          {/* <button type="submit" className="submit-button" disabled={!isValid}>
-            Envoyer
-          </button> */}
-        </div>
-      </form>
 
-      {isModalOpen && (
-        <ConfirmationModal message={message} onClose={closeModal} />
-      )}
-    </div>
+          <div className="form-group">
+            <div className="input-group">
+              <input
+                required
+                type="text"
+                name="from_name"
+                id="from_name"
+                autoComplete="off"
+                className={`input ${errors.from_name ? "input-error" : ""}`}
+                {...register("from_name", { required: "Le nom est requis." })}
+              />
+              <label className="user-label" htmlFor="from_name">Nom</label>
+              {errors.from_name && (
+                <p className="error-message">{errors.from_name.message}</p>
+              )}
+            </div>
+            <div className="input-group">
+              <input
+                required
+                type="email"
+                name="from_email"
+                id="from_email"
+                autoComplete="off"
+                className={`input ${errors.from_email ? "input-error" : ""}`}
+                {...register("from_email", {
+                  required: "L'email est requis.",
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: "Adresse email invalide.",
+                  },
+                })}
+              />
+              <label className="user-label" htmlFor="from_email">Email</label>
+              {errors.from_email && (
+                <p className="error-message">{errors.from_email.message}</p>
+              )}
+            </div>
+          </div>
+
+          <div className="form-group">
+            <div className="input-group">
+              <input
+                required
+                type="text"
+                name="entreprise"
+                id="entreprise"
+                autoComplete="off"
+                className={`input ${errors.entreprise ? "input-error" : ""}`}
+                {...register("entreprise", {
+                  required: "Le nom de l'entreprise est requis.",
+                })}
+              />
+              <label className="user-label" htmlFor="entreprise">Entreprise</label>
+              {errors.entreprise && (
+                <p className="error-message">{errors.entreprise.message}</p>
+              )}
+            </div>
+            <div className="input-group">
+              <input
+                required
+                type="text"
+                name="sujet"
+                id="sujet"
+                autoComplete="off"
+                className={`input ${errors.sujet ? "input-error" : ""}`}
+                {...register("sujet", { required: "Le sujet est requis." })}
+              />
+              <label className="user-label" htmlFor="sujet">Sujet</label>
+              {errors.sujet && (
+                <p className="error-message">{errors.sujet.message}</p>
+              )}
+            </div>
+          </div>
+
+          <div className="input-group">
+            <textarea
+              required
+              name="message"
+              id="message"
+              autoComplete="off"
+              className={`textarea-form ${errors.message ? "input-error" : ""}`}
+              {...register("message", { required: "Le message est requis." })}
+            />
+            <label className="user-label" htmlFor="message">Message</label>
+            {errors.message && (
+              <p className="error-message">{errors.message.message}</p>
+            )}
+          </div>
+          <div className="container-button-val">
+            <ButtonSend/>
+          </div>
+        </form>
+
+        {isModalOpen && (
+          <ConfirmationModal message={message} onClose={closeModal} />
+        )}
+      </div>
   );
 }

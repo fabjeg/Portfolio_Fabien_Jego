@@ -16,6 +16,5 @@
   padding-bottom: 54px;
   position: relative;
   overflow: visible;
-  height: 100%;
-  /* z-index: 11; */
+  min-height: 100%;
 }

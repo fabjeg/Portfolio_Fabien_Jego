@@ -1,13 +1,12 @@
-import { Header } from '../header/header'
-import { MobileNavbar } from '../header/mobilNavbar'
+
+import { NavBar } from '../header/navbar'
 import { Wrapper } from '../wrapper/wrapper'
 import './style.css'
 
 export function Container () {
     return (
         <div className="container">
-            <Header/>
-            <MobileNavbar/>
+            <NavBar/>
             <Wrapper/>
         </div>
     )

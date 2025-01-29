@@ -17,7 +17,7 @@ export function ButtonCv(){
     <span>M</span>
     <span>O</span>
     <span>N</span>
-    <span></span>
+    <span>&nbsp;</span>
     <span>C</span>
     <span>V</span>
   </div>

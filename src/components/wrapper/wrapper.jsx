@@ -2,11 +2,10 @@ import { Footer } from '../footer/footer'
 import { About } from '../about/about'
 import { Background } from '../bacground/background'
 import { Competence } from '../competence/competence'
-// import { Form } from '../form/form'
 import { Project } from '../project/project'
 import { Started } from '../started/started'
 import './style.css'
-import { FormTest } from '../form/form-test'
+import { Form } from '../form/form'
 
 export function Wrapper () {
     return (
@@ -16,8 +15,7 @@ export function Wrapper () {
             <About/>
             <Competence/>
             <Project/>
-            {/* <Form/> */}
-            <FormTest/>
+            <Form/>
             <Footer/>
         </div>
     )

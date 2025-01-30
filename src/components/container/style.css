@@ -1,47 +1,27 @@
-body {
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-family: "Poppins";
-    font-size: 14px;
-    line-height: 26px;
-    color: #fff;
-    background: #373b40;
-    letter-spacing: 0;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
 .container{
     margin: 0;
     position: relative;
-    overflow: hidden;
 }
-  /* Styles pour le header */
   html {
     scroll-behavior: smooth;
 
   }
   .header {
     padding: 0 0 0 8px;
-    position: absolute;
+    position: fixed;
     left: 50px;
     right: 50px;
     top: 40px;
     height: 80px;
-    z-index: 500; /* Réduit le z-index pour éviter l'interférence avec le modal */
+    z-index: 500; 
     background: #585d65;
     border-radius: 80px;
     transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
   }
-  
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     box-sizing: border-box;
   }
-  main, body {
-    display: block !important;
-  }
+
   

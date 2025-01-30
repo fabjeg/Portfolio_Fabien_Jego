@@ -13,13 +13,17 @@ export function NavBar() {
 
   useEffect(() => {
     const navbarLinks = document.querySelector(".navbar_links");
-
-    if (navbarLinks) {
+  
+    if (navbarLinks && showLinks) {
       const preventScroll = (e) => e.preventDefault();
-      navbarLinks.addEventListener("wheel", preventScroll);
-      return () => navbarLinks.removeEventListener("wheel", preventScroll);
+      navbarLinks.addEventListener("wheel", preventScroll, { passive: false });
+  
+      return () => {
+        navbarLinks.removeEventListener("wheel", preventScroll);
+      };
     }
-  }, []);
+  }, [showLinks]); // On écoute les changements de showLinks
+  
 
   const navItems = [
     { name: t("accueil"), link: "#home" },
@@ -31,12 +35,12 @@ export function NavBar() {
 
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <div className="navbarlogo">
+      <div className="button_cv_navbar">
         <ButtonCv />
       </div>
-      <di className="buttonLanguage">
+      <div className="buttonLanguage">
         <LanguageSelector/>
-      </di>
+      </div>
       <ul className="navbar_links">
         {navItems.map((item, index) => (
           <li key={index} className={`navbar_item slideInDown-${index + 1}`}>

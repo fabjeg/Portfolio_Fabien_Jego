@@ -55,6 +55,12 @@ a {
 .buttonLanguage{
   display: none;
 }
+.button_cv_navbar{
+  border: 2px solid white;
+  border-radius: 3rem;
+  padding: 5px;
+  margin-left: 1%;
+}
 /* Style pour les écrans de taille réduite */
 @media screen and (max-width: 1200px) {
   .navbar {
@@ -185,5 +191,8 @@ a {
   }
   .buttonLanguage{
     display: block;
+  }
+  .button_cv_navbar{
+    display: none;
   }
 }

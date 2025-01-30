@@ -198,15 +198,13 @@
 .btn-53 {
   -webkit-tap-highlight-color: transparent;
   appearance: button;
-  background-color: #373B40;
+  background-color: #585D65;
   background-image: none;
   cursor: pointer;
   font-size: 100%;
   line-height: 1.5;
   margin: 0;
-  mask-image: radial-gradient(#000, #fff);
   padding: 0;
-  margin-left: 30%;
 }
 
 .btn-53:disabled {
@@ -291,4 +289,3 @@
 .btn-53:hover span:nth-child(6) {
   transition-delay: 0.5s;
 }
-/*-----ButtonSend-----*/

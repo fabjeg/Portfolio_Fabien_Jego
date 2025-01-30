@@ -12,6 +12,7 @@
   "projets": "Projects",
   "accueil": "Home",
   "about": "About",
+  "formation": "Training",
   "nom": "Name",
   "naissance": "Birth",
   "ville": "City",
@@ -27,6 +28,8 @@
   "envoyer": "Send",
   "setMessage": "Your message has been sent!",
   "setMessage2": "An error has occurred while sending your message.",
+  "textDiploma": "OpenClassrooms is an online training platform specializing in digital careers. Recognized for its innovative teaching approach, it offers professional programs leading to state-recognized diplomas. Through a combination of interactive courses, hands-on projects, and personalized mentoring, OpenClassrooms enables learners to acquire practical skills tailored to market needs. It was within this organization that I completed my web development training, allowing me to earn my diploma and master the essential technologies for creating modern and intuitive user interfaces.",
+  "buttonDiplome": "Professional Title",
   "portfolio": {
     "OhMyFood": {
       "text": " As part of my training as a front-end developer, I was tasked with creating a 'mobile-first' site listing the menus of high-end restaurants for the OhMyFood project. Customers can pre-order their meal to avoid queues. Four restaurateurs were simulated as partners. I ensured responsive design and integrated elegant animations to provide an optimal user experience. This experience allowed me to demonstrate my skills in web design and the creation of attractive and functional user interfaces."

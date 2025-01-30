@@ -28,6 +28,7 @@ export function NavBar() {
   const navItems = [
     { name: t("accueil"), link: "#home" },
     { name: t("about"), link: "#about" },
+    { name: t("formation"), link: "#formation" },
     { name: t("compétences"), link: "#competences" },
     { name: t("projects"), link: "#projets" },
     { name: "Contact", link: "#contact" },

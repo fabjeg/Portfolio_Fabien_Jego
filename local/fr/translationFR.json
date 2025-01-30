@@ -12,6 +12,7 @@
   "compétences": "Compétences",
   "accueil": "Accueil",
   "about": "À propos",
+  "formation": "Formation",
   "nom": "Nom",
   "naissance": "Naissance",
   "ville": "Ville",
@@ -27,6 +28,8 @@
   "envoyer": "Envoyer",
   "setMessage": "Votre message a bien été envoyé !",
   "setMessage2": "Une erreur est survenue lors de l'envoi de votre message.",
+  "textDiploma": "OpenClassrooms est une plateforme de formation en ligne spécialisée dans les métiers du numérique. Reconnue pour son approche pédagogique innovante, elle propose des parcours professionnalisants aboutissant à des diplômes reconnus par l’État. Grâce à une combinaison de cours interactifs, de projets pratiques et d’un mentorat personnalisé, OpenClassrooms permet aux apprenants d’acquérir des compétences concrètes et adaptées aux besoins du marché. C’est au sein de cet organisme que j’ai suivi ma formation en développement web, me permettant d’obtenir mon diplôme et de maîtriser les technologies essentielles à la création d’interfaces modernes et intuitives.",
+  "buttonDiplome": "Titre Professionnel",
   "portfolio": {
     "OhMyFood": {
       "text": "Dans le cadre de ma formation en tant que développeur front-end, j'ai été mis en situation pour créer un site 'mobile-first' répertoriant les menus de restaurants haut de gamme pour le projet OhMyFood. Les clients peuvent précommander leur repas afin d'éviter les files d'attente. Quatre restaurateurs ont été simulés comme partenaires. J'ai assuré la conception responsive et intégré des animations élégantes pour offrir une expérience utilisateur optimale. Cette expérience m'a permis de démontrer mes compétences en conception web et en création d'interfaces utilisateur attractives et fonctionnelles."

@@ -15,6 +15,7 @@ table {
   text-align: left;
   padding: 10px;
   color: #68e0cf;
+  white-space: nowrap;
 }
 .info-value {
   font-size: 18px;

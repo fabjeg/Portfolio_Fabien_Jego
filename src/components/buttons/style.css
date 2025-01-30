@@ -60,7 +60,7 @@
   -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
 }
 .social-login-icons svg {
-  width: 40px;
+  width: 50px;
 }
 
 .social-icon-1,
@@ -77,16 +77,15 @@
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  margin: 20px 0 0 0;
+  margin: 30px 10px 0 30px;
   font-size: 30px;
 }
-
 .icon svg {
   fill: #111;
 }
 
 .socialcontainer {
-  height: 80px;
+  height: 64px;
   overflow: hidden;
 }
 .social-icon-1 {
@@ -151,7 +150,7 @@
 .socialcontainer:hover .social-icon-4 {
   transform: translateY(-70px);
 }
-
+/*-----Button-scroll-----*/
  .container_mouse{
   text-align: center;
  }

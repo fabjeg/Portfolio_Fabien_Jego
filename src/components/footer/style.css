@@ -1,12 +1,14 @@
-.container-footer{
+.container-footer {
     padding: 0;
     position: fixed;
     bottom: 40px;
     right: 0;
     width: 140px;
-    height: 1px;
+    height: 10%;
     z-index: 99;
-    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .container-footer:before {
     content: '';

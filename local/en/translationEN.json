@@ -1,0 +1,56 @@
+{
+  "aboutTitle": "About",
+  "aboutContent": "I am currently looking for new professional opportunities and I am open to collaborations for creative and engaging projects. If you are looking for an enthusiastic, rigorous developer ready to take on challenges, I would be honored to join your team and actively contribute to your projects.",
+  "developerTitle": "Front-end Developer",
+  "welcomeMessage": "I am a passionate web front-end developer...",
+  "cvButton": "My CV",
+  "contactButton": "Contact Me",
+  "name": "Fabien JÉGO",
+  "title": "Front-end Developer",
+  "description": "I am a passionate web front-end developer with a strong interest in technology and development. Graduated from an intensive 9-month course at OpenClassrooms as a web integrator, I have acquired solid skills and a knowledge level equivalent to a Bac+2, allowing me to successfully carry out ambitious and meticulous projects.",
+  "compétences": "Skills",
+  "projets": "Projects",
+  "accueil": "Home",
+  "about": "About",
+  "nom": "Name",
+  "naissance": "Birth",
+  "ville": "City",
+  "Téléphone": "Phone",
+  "Entreprise": "Company",
+  "sujet": "subject",
+  "errorMessage": " Please fill in all required fields correctly.",
+  "errorMessageName": "The name is required.",
+  "errorMessageEmail": "E-mail is required.",
+  "errorMessagecompagny": "Company name required.",
+  "errorMessagesubject": "The subject is required.",
+  "errorMessageMessage": "The message is required.",
+  "envoyer": "Send",
+  "setMessage": "Your message has been sent!",
+  "setMessage2": "An error has occurred while sending your message.",
+  "portfolio": {
+    "OhMyFood": {
+      "text": " As part of my training as a front-end developer, I was tasked with creating a 'mobile-first' site listing the menus of high-end restaurants for the OhMyFood project. Customers can pre-order their meal to avoid queues. Four restaurateurs were simulated as partners. I ensured responsive design and integrated elegant animations to provide an optimal user experience. This experience allowed me to demonstrate my skills in web design and the creation of attractive and functional user interfaces."
+    },
+    "Kasa": {
+      "text": "As part of my training as a front-end developer, I participated in a simulation project where I was tasked with working with Kasa, a peer-to-peer apartment rental platform in France. My mission was to completely redesign their website using React. Even without access to the back-end, I was able to develop the entire application by creating React components and routing with React Router, thereby demonstrating my ability to handle complex projects and find creative solutions despite constraints."
+    },
+    "724events": {
+      "text": "As part of my training as a front-end developer, I was tasked by the event agency 724events to troubleshoot bugs and finalize their showcase website. This project had initially been started by another developer. I took over the work by fixing bugs and completing the test plan to ensure flawless operation. This experience allowed me to demonstrate my debugging and project finalization skills while meeting client expectations."
+    },
+    "Nina Carducci": {
+      "text": "As part of my training as a front-end developer, I was tasked with offering SEO optimization services to Nina Carducci, a photographer. After conducting an audit of her site, I identified loading speed and structure issues. I proposed to solve these problems by optimizing the images and code of the site. My goal was to improve her search engine ranking and increase her visibility. This experience allowed me to demonstrate my skills in SEO and website optimization for better search engine ranking."
+    },
+    "Argent Bank Redux Toolkit": {
+      "text": "As part of my training as a front-end developer, I was tasked with working on a simulated project for Argent Bank. I worked on creating the user dashboard in two phases. The first phase involved building a responsive web application using React, leveraging Redux for state management. In the second phase, I worked on designing transactions and provided Swagger specifications for the associated API routes. This experience allowed me to develop my skills in front-end development, state management with Redux, and API documentation with Swagger."
+    },
+    "Argent Bank Redux": {
+      "text": "As part of my training as a front-end developer, I participated in a simulation project for Argent Bank. I was tasked with creating the user dashboard in two phases. The first phase involved developing a responsive web application using React, leveraging Redux for state management. In the second phase, I simulated back-end modifications by creating three new routes: a POST route to send data to MongoDB, a GET route to retrieve data, and a PUT route to modify transaction types. I also worked on the new design of the site, integrating visual updates to enhance the user interface. This experience allowed me to develop my skills in full-stack development and project management."
+    },
+    "Booki": {
+      "text": "As part of my training as a web developer, I participated in a simulation project for Booki. I integrated the site's interface using HTML and CSS, in collaboration with Sarah, the CTO, and Loïc, the UI designer. I worked on complete mockups for desktop, tablet, and mobile versions, respecting technical specifications and constraints. I received a prepared file structure to start, which allowed me to focus on integration and implementation of the designs. This experience allowed me to refine my front-end development skills and responsive design."
+    },
+    "Portfolio architecte": {
+      "text": "As part of my training as a front-end developer, I participated in a simulation project at ArchiWebos. I contributed to the design of the portfolio site for Sophie Bluel, an interior architect. My role involved creating the presentation page, the administrator login page, and a media upload modal. This experience allowed me to demonstrate my skills in front-end development and interactive web design, while working on projects with specific and detailed requirements."
+    }
+  }
+}

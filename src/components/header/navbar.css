@@ -52,7 +52,9 @@ a {
   color: inherit;
   border: none;
 }
-
+.buttonLanguage{
+  display: none;
+}
 /* Style pour les écrans de taille réduite */
 @media screen and (max-width: 1200px) {
   .navbar {
@@ -74,6 +76,9 @@ a {
     background-color: #373B40;
     visibility: hidden;
     transition: all .8s ease-out;
+    
+  overflow: hidden;
+  touch-action: none;
   }
 
   .show-nav .navbar_links {
@@ -177,5 +182,8 @@ a {
 
   .show-nav .slideInDown-5 {
     transition: all 1.4s ease-out;
+  }
+  .buttonLanguage{
+    display: block;
   }
 }

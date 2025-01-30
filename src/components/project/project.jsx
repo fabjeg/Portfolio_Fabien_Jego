@@ -3,6 +3,7 @@ import portfolio from "../../assets/projets/data";
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { Modal } from "../modal/modal";  
+import { useTranslation } from 'react-i18next';
 
 export function Project() {
   const [isModalOpen, setIsModalOpen] = useState(false); 
@@ -12,10 +13,10 @@ export function Project() {
     setSelectedProject(port); 
     setIsModalOpen(true); 
   };
-
+  const { t } = useTranslation();
   return (
     <div className="section projects">
-      <h5 className="h5-title" id="projets">Projets</h5>
+      <h5 className="h5-title" id="projets">{t('projets')}</h5>
       <div className="cards">
         {portfolio.map((port, index) => (
           <Card3D

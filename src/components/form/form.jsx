@@ -4,8 +4,10 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 import { ConfirmationModal } from "../modalForm/modalForm";
 import { ButtonSend } from "../buttons/button-send";
+import { useTranslation } from "react-i18next";
 
 export function Form() {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -32,13 +34,13 @@ export function Form() {
       )
       .then((result) => {
         console.log("Email envoyé avec succès :", result);
-        setMessage("Votre message a bien été envoyé !");
+        setMessage(t('setMessage'));
         setIsModalOpen(true);
         reset();
       })
       .catch((error) => {
         console.error("Erreur lors de l'envoi :", error);
-        setMessage("Une erreur est survenue lors de l'envoi de votre message.");
+        setMessage(t('setMessage2'));
         setIsModalOpen(true);
       });
   };
@@ -46,16 +48,15 @@ export function Form() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-
   return (
       <div className="section">
         <h6 className="h6-title" id="contact">
-          Contact
+         Contact
         </h6>
         <form onSubmit={handleSubmit(sendEmail)} className="form">
           {isModalOpen && (
             <p className="global-error">
-              Veuillez remplir correctement tous les champs requis.
+             {t('errorMessage')}
             </p>
           )}
 
@@ -68,9 +69,9 @@ export function Form() {
                 id="from_name"
                 autoComplete="off"
                 className={`input ${errors.from_name ? "input-error" : ""}`}
-                {...register("from_name", { required: "Le nom est requis." })}
+                {...register("from_name", { required: t('errorMessageName') })}
               />
-              <label className="user-label" htmlFor="from_name">Nom</label>
+              <label className="user-label" htmlFor="from_name">{t("nom")}</label>
               {errors.from_name && (
                 <p className="error-message">{errors.from_name.message}</p>
               )}
@@ -84,14 +85,14 @@ export function Form() {
                 autoComplete="off"
                 className={`input ${errors.from_email ? "input-error" : ""}`}
                 {...register("from_email", {
-                  required: "L'email est requis.",
+                  required: t('errorMessageEmail'),
                   pattern: {
                     value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                     message: "Adresse email invalide.",
                   },
                 })}
               />
-              <label className="user-label" htmlFor="from_email">Email</label>
+              <label className="user-label" htmlFor="from_email">E-mail</label>
               {errors.from_email && (
                 <p className="error-message">{errors.from_email.message}</p>
               )}
@@ -108,10 +109,10 @@ export function Form() {
                 autoComplete="off"
                 className={`input ${errors.entreprise ? "input-error" : ""}`}
                 {...register("entreprise", {
-                  required: "Le nom de l'entreprise est requis.",
+                  required: t('errorMessagecompagny'),
                 })}
               />
-              <label className="user-label" htmlFor="entreprise">Entreprise</label>
+              <label className="user-label" htmlFor="entreprise">{t('Entreprise')}</label>
               {errors.entreprise && (
                 <p className="error-message">{errors.entreprise.message}</p>
               )}
@@ -124,9 +125,9 @@ export function Form() {
                 id="sujet"
                 autoComplete="off"
                 className={`input ${errors.sujet ? "input-error" : ""}`}
-                {...register("sujet", { required: "Le sujet est requis." })}
+                {...register("sujet", { required: t('errorMessagesubject')})}
               />
-              <label className="user-label" htmlFor="sujet">Sujet</label>
+              <label className="user-label" htmlFor="sujet">{t('sujet')}</label>
               {errors.sujet && (
                 <p className="error-message">{errors.sujet.message}</p>
               )}
@@ -140,7 +141,7 @@ export function Form() {
               id="message"
               autoComplete="off"
               className={`textarea-form ${errors.message ? "input-error" : ""}`}
-              {...register("message", { required: "Le message est requis." })}
+              {...register("message", { required: t('errorMessageMessage') })}
             />
             <label className="user-label" htmlFor="message">Message</label>
             {errors.message && (

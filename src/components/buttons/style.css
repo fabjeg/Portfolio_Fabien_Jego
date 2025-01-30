@@ -193,7 +193,6 @@
 .btn-53:before {
   border: 0px solid;
   box-sizing: border-box;
-  
 }
 
 .btn-53 {
@@ -207,7 +206,7 @@
   margin: 0;
   mask-image: radial-gradient(#000, #fff);
   padding: 0;
-  
+  margin-left: 30%;
 }
 
 .btn-53:disabled {
@@ -230,12 +229,12 @@
 .btn-53 {
   border-radius: 999px;
   box-sizing: border-box;
-  font-weight: 900;
+  font-weight: 500;
   overflow: hidden;
   padding: 0 12px;
   position: relative;
-  text-transform: uppercase;
   color: #68e0cf;
+  font-family: 'Poppins';
 }
 
 .btn-53 .original {
@@ -245,7 +244,6 @@
   place-content: center;
   position: absolute;
   transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
-  /* border: 2px solid #68e0cf; */
   background-color: #5a5f65;
   
   }

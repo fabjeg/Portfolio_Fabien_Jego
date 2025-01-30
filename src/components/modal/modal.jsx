@@ -4,13 +4,14 @@ import picturesSlide from "../../assets/projets/dataSlide";
 import { useState } from "react";
 import { Slide } from "../slide/slide";
 import { ButtonModal } from "../buttons/button-modal";
+import { useTranslation } from "react-i18next";
 
 export function Modal({ project, setIsModalOpen }) {
   const projectData = picturesSlide.find((proj) => proj.name === project.name);
   const images = projectData?.img || [];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const { t } = useTranslation();
   return (
     <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -30,7 +31,7 @@ export function Modal({ project, setIsModalOpen }) {
         )}
 
         <div className="container-modal-description">
-          <p className="modal-description">{project.text}</p>
+          <p className="modal-description">{t(`portfolio.${project.name}.text`)}</p>
           {project.identifier && (
             <p className="modal-description">identifiant: {project.identifier}</p>
           )}

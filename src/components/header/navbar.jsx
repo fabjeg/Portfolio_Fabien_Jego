@@ -1,29 +1,52 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./navbar.css";
 import { ButtonCv } from "../buttons/button-cv";
+import { useTranslation } from "react-i18next";
+import { LanguageSelector } from "../langueSelector/langueSelector";
 
 export function NavBar() {
   const [showLinks, setShowLinks] = useState(false);
 
   const handleShowLinks = () => setShowLinks(!showLinks);
+  const handleLinkClick = () => setShowLinks(false);
+  const { t } = useTranslation();
 
-  const handleLinkClick = () => setShowLinks(false); // Ferme le menu après le clic
+  useEffect(() => {
+    const navbarLinks = document.querySelector(".navbar_links");
+
+    if (navbarLinks) {
+      const preventScroll = (e) => e.preventDefault();
+      navbarLinks.addEventListener("wheel", preventScroll);
+      return () => navbarLinks.removeEventListener("wheel", preventScroll);
+    }
+  }, []);
 
   const navItems = [
-    { name: "Accueil", link: "#home" },
-    { name: "À propos", link: "#about" },
-    { name: "competences", link: "#competences" },
-    { name: "projets", link: "#projets" },
+    { name: t("accueil"), link: "#home" },
+    { name: t("about"), link: "#about" },
+    { name: t("compétences"), link: "#competences" },
+    { name: t("projects"), link: "#projets" },
     { name: "Contact", link: "#contact" },
   ];
 
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <div className="navbarlogo"><ButtonCv/></div>
+      <div className="navbarlogo">
+        <ButtonCv />
+      </div>
+      <di className="buttonLanguage">
+        <LanguageSelector/>
+      </di>
       <ul className="navbar_links">
         {navItems.map((item, index) => (
           <li key={index} className={`navbar_item slideInDown-${index + 1}`}>
-            <a href={item.link} className="navbar_link" onClick={handleLinkClick}>{item.name}</a>
+            <a
+              href={item.link}
+              className="navbar_link"
+              onClick={handleLinkClick}
+            >
+              {item.name}
+            </a>
           </li>
         ))}
       </ul>

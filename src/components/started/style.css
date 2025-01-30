@@ -78,6 +78,15 @@ article {
 .buttonCv{
   display: none;
 }
+.container-title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20%;
+}
+.selectLanguage{
+  margin-top: 30%;
+}
 @media (max-width: 1199px) {
   .section {
     width: 100%;
@@ -101,10 +110,16 @@ article {
     line-height: 1.4;
     text-align: center;
   }
-  .container-title-cv {
+  .container-title{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .selectLanguage{
+    display: none;
+  }
+  .btn-53{
+    margin: 0;
   }
   .buttonCv{
     display: block;

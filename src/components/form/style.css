@@ -17,7 +17,7 @@
   color: #f5f5f5;
   transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .user-label {
@@ -46,4 +46,8 @@
 .container-button-val{
   display: flex;
   justify-content: center;
+}
+.error-message{
+  margin: 0 0 5px 10px;
+  color: rgb(222, 41, 41);
 }

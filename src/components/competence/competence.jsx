@@ -10,10 +10,11 @@ import github from "../../assets/icons/github.png"
 import mongodb from "../../assets/icons/mongodb.png"
 import figma from "../../assets/icons/figma.png"
 import "./style.css";
+import { useTranslation } from 'react-i18next';
 
 export function Competence() {
 
-
+    const { t } = useTranslation();
     const skills = [
         { src: html, alt: "HTML", text: "HTML5" },
         { src: css, alt: "CSS", text: "CSS3" },
@@ -31,7 +32,7 @@ export function Competence() {
 
     return (
         <div className="title-competence section" >
-            <h4 id='competences'>Compétences</h4>
+            <h4 id='competences'>{t('compétences')}</h4>
             <div className="border-title"></div>
             <div className="container">
                 <div className="container-icons">

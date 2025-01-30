@@ -1,10 +1,11 @@
-
+import { useTranslation } from "react-i18next";
 import styled from 'styled-components';
 
 export function ButtonSend () {
+  const { t } = useTranslation();
   return (
     <StyledWrapper>
-      <button> Envoyer
+      <button> {t('envoyer')}
       </button>
     </StyledWrapper>
   );

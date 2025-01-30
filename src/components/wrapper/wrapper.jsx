@@ -6,6 +6,7 @@ import { Project } from '../project/project'
 import { Started } from '../started/started'
 import './style.css'
 import { Form } from '../form/form'
+import { Trainning } from '../training/training'
 
 export function Wrapper () {
     return (
@@ -13,6 +14,7 @@ export function Wrapper () {
             <Background/>
             <Started/>
             <About/>
+            <Trainning/>
             <Competence/>
             <Project/>
             <Form/>

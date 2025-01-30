@@ -1,0 +1,12 @@
+.container_picture_ocr{
+    display: flex;
+    justify-content: center;
+}
+.picture_ocr{
+    width: 80%;
+}
+.trainnin_button_diploma{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

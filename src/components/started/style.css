@@ -120,12 +120,13 @@ article {
   }
   .btn-53{
     margin: 0;
+    background-color: #373b40;
   }
   .buttonCv{
     display: block;
   }
   .original{
-    background-color: #373b40;
+    background-color: #373B40;
     border-radius: 10px ;
   }
 }

@@ -3,10 +3,6 @@ import ResumePDF from '../../assets/CV.pdf'
 
 export function ButtonCv(){
   const handleDownload = () => {
-    const icon = document.querySelector(".fa-download");
-    if (icon) {
-      icon.classList.add("rotate");
-    }
     window.open(ResumePDF);
   };
     return (

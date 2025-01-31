@@ -1,6 +1,5 @@
-/* Styles du modal */
 .modal-overlay {
-  position: fixed; /* Reste en place même en défilant */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,22 +8,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2000; /* Assurez-vous que c'est au-dessus de tout */
+  z-index: 2000; 
 }
 .modal-content {
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0F2027;  
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
   padding: 20px;
   border-radius: 8px;
   max-width: 90%;
   max-height: 90%;
-  overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+  overflow-y: auto; 
   display: flex;
-  flex-direction: column; /* Les enfants s'affichent en colonne */
+  flex-direction: column;
   gap: 20px;
   align-items: center;
-  position: relative; /* Maintient le contexte pour les enfants */
+  position: relative; 
 }
 .containerButtonClose{
   width: 100%;

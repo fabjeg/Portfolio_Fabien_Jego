@@ -33,16 +33,42 @@ a {
   white-space: nowrap;
   gap: 10%;
 }
-
 .navbar_link {
-  padding: 0 0.3rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
   color: inherit;
 }
 
-.navbar_link:hover {
-  color: #68E0CF;
+.navbar_link::before,
+.navbar_link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  background: currentColor;
+  transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
 }
-
+.navbar_link::before {
+  left: 50%;
+}
+.navbar_link::after {
+  right: 50%;
+}
+.navbar_link:hover::before,
+.navbar_link:hover::after {
+  width: 50%;
+}
+.navbar_link:hover::before {
+  left: 0;
+}
+.navbar_link:hover::after {
+  right: 0;
+}
+.navbar_link:hover{
+  color: #68e0cf;
+}
 /* Bouton burger */
 .navbar__burguer {
   width: 40px;
@@ -193,5 +219,9 @@ a {
   }
   .button_cv_navbar{
     display: none;
+  }
+  .navbar_link::before,
+  .navbar_link::after {
+    content: none;
   }
 }

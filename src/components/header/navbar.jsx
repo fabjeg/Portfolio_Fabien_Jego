@@ -22,7 +22,7 @@ export function NavBar() {
         navbarLinks.removeEventListener("wheel", preventScroll);
       };
     }
-  }, [showLinks]); // On écoute les changements de showLinks
+  }, [showLinks]);
   
 
   const navItems = [
@@ -43,18 +43,15 @@ export function NavBar() {
         <LanguageSelector/>
       </div>
       <ul className="navbar_links">
-        {navItems.map((item, index) => (
-          <li key={index} className={`navbar_item slideInDown-${index + 1}`}>
-            <a
-              href={item.link}
-              className="navbar_link"
-              onClick={handleLinkClick}
-            >
-              {item.name}
-            </a>
-          </li>
-        ))}
-      </ul>
+  {navItems.map((item, index) => (
+    <li key={index} className={`navbar_item slideInDown-${index + 1}`}>
+      <a href={item.link} className="navbar_link" onClick={handleLinkClick}>
+        {item.name}
+      </a>
+    </li>
+  ))}
+</ul>
+
       <button className="navbar__burguer" onClick={handleShowLinks}>
         <span className="burguer-bar"></span>
       </button>

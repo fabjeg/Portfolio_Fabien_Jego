@@ -14,6 +14,8 @@ export function Project() {
     setIsModalOpen(true); 
   };
   const { t } = useTranslation();
+  console.log(portfolio);
+  
   return (
     <div className="section projects">
       <h5 className="h5-title" id="projets">{t('projets')}</h5>
@@ -22,6 +24,7 @@ export function Project() {
           <Card3D
           key={index}
           image={Array.isArray(port.image) ? port.image[0] : port.image} 
+          name={port.name}
           onClick={() => handleCardClick(port)} 
           />
         ))}
@@ -33,7 +36,7 @@ export function Project() {
   );
 }
 
-function Card3D({ image, onClick }) {
+function Card3D({ image, onClick, name }) {
   const [style, setStyle] = useState({});
 
   const handleMouseMove = (e) => {
@@ -66,6 +69,7 @@ function Card3D({ image, onClick }) {
     >
       <div className="card-content">
         <img src={image} alt="project-pictures" className="card-image" />
+        <div className='card-content2 '>{name}</div>
       </div>
     </div>
   );
@@ -74,4 +78,5 @@ function Card3D({ image, onClick }) {
 Card3D.propTypes = {
   image: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
 };

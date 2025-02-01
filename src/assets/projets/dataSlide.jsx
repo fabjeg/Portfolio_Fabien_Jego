@@ -23,6 +23,11 @@ import sophieB2 from '../images/slide/sophieBluel/SophieBluel(2).webp'
 import sophieB4 from '../images/slide/sophieBluel/SophieBluel(4).webp'
 import argenB from "../images/slide/argentBank/argentBank.png"
 import argenB1 from "../images/slide/argentBank/argentBank(1).png"
+import port from "../images/slide/portfolio/portfolio.png"
+import port2 from "../images/slide/portfolio/portfolio(2).png"
+import port3 from "../images/slide/portfolio/portfolio(3).png"
+import port4 from "../images/slide/portfolio/portfolio(4).png"
+import port5 from "../images/slide/portfolio/portfolio(5).png"
 
 const picturesSlide = [
   {
@@ -56,6 +61,10 @@ const picturesSlide = [
   {
     name: "Argent Bank Redux Toolkit",
     img: [abr1, abr2, abr3],
+  },
+  {
+    name: "Portfolio",
+    img: [port, port2, port3, port4, port5],
   },
 ];
 

@@ -54,6 +54,9 @@
     },
     "Portfolio architecte": {
       "text": "As part of my training as a front-end developer, I participated in a simulation project at ArchiWebos. I contributed to the design of the portfolio site for Sophie Bluel, an interior architect. My role involved creating the presentation page, the administrator login page, and a media upload modal. This experience allowed me to demonstrate my skills in front-end development and interactive web design, while working on projects with specific and detailed requirements."
+    },
+    "Portfolio": {
+      "text": "This project, completed as part of my training, is a web application developed with React, one of the most popular and efficient JavaScript frameworks for building user interfaces. This portfolio showcases my frontend development skills, particularly in component manipulation and the use of hooks for effective lifecycle management of components."
     }
   }
 }

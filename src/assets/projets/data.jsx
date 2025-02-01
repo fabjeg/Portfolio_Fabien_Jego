@@ -6,6 +6,7 @@ import events from "../images/724events.png";
 import Ninacarducci from "../images/Ninacarucci.png";
 import Argentbank from "../images/Argentbank.png";
 import picturesSlide from './dataSlide';
+import Portfolio from '../images/portfolio.png'
 
 const findImages = (name) => {
   const item = picturesSlide.find((item) => item.name === name);
@@ -84,6 +85,15 @@ const portfolio = [
     code: "https://github.com/fabjeg/Portfolio-architecte-sophie-bluel-p6",
     site: "https://sophie-bluel-portfolio-architecte.netlify.app/",
     competences: ["HTML", "CSS", "Javascript", "Swagger"],
+    images: findImages("Portfolio architecte"),
+  },
+  {
+    id: "46d188c5",
+    name: "Portfolio",
+    image: [Portfolio],
+    code: "https://github.com/fabjeg/Portfolio",
+    site: "https://portfolio-fabiens-projects-3e207d58.vercel.app/",
+    competences: [ "CSS", "React"],
     images: findImages("Portfolio architecte"),
   },
 ];

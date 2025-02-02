@@ -1,31 +1,70 @@
 .container-footer {
-    padding: 0;
-    position: fixed;
-    bottom: 40px;
-    right: 0;
-    width: 140px;
-    height: 10%;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 0;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  width: 140px;
+  height: 50%;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .container-footer:before {
-    content: '';
-    position: absolute;
-    bottom: -50vh;
-    left: 0;
-    width: 1px;
-    height: 200vh;
-    background: #585d65;
+  content: "";
+  position: absolute;
+  bottom: -50vh;
+  left: 0;
+  width: 1px;
+  height: 200vh;
+  background: #585d65;
 }
+
+.container_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_footer {
+  border: 1px solid #585d65;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 10px 0;
+  background-color: #373b40;
+}
+
+.fa-github,
+.fa-linkedin-square {
+  font-size: 25px;
+  background: #373b40;
+  color: white;
+}
+
 @media (max-width: 1199px) {
-    .container-footer {
-        margin: 0 0 50px 0;
-        padding: 0;
-        position: relative;
-        bottom: auto;
-        height: auto;
-        width: 100%;
-    }
+  .mouse-btn {
+    margin: 50px 0px 0px 10px;
+  }
+  .container-footer {
+    margin: 0 0 50px 0;
+    padding: 0;
+    position: relative;
+    bottom: auto;
+    height: auto;
+    width: 100%;
+  }
+  .containerLogo {
+    display: flex;
+    position: absolute;
+    top: -22%;
+    left: 42%;
+    width: 100%;
+  }
 }

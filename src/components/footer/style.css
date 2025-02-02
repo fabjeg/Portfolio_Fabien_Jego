@@ -62,9 +62,9 @@
   }
   .containerLogo {
     display: flex;
+    justify-content: center;
     position: absolute;
     top: -22%;
-    left: 42%;
     width: 100%;
     gap: 10%;
   }

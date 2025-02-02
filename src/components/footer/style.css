@@ -48,9 +48,9 @@
   color: white;
   margin-top: 8px;
 }
-.logo_image, img{
-  width: 30px;
-  height: 30px;
+.unique-logo-img {
+  width: 60px;  
+  height: 60px; 
   margin-top: 8px;
 }
 @media (max-width: 1199px) {

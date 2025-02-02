@@ -9,7 +9,12 @@ export function Footer() {
       class: "fa fa-linkedin-square",
       url: "https://www.linkedin.com/in/fabien-jego-2b286230a/",
     },
-    { class: null, url: "https://openclassrooms.com/fr/profile/view-as/recruiter", image: logoOpen },
+    {
+      class: null,
+      url: "https://openclassrooms.com/fr/profile/view-as/recruiter",
+      image: logoOpen,
+      imgClass: "unique-logo-img",
+    },
   ];
 
   return (
@@ -19,7 +24,9 @@ export function Footer() {
           <div key={index} className="logo_footer">
             <a href={logo.url} target="_blank" rel="noopener noreferrer">
               {logo.image ? (
-                <img src={logo.image} alt="logo" className="logo_image" />
+                <div className="logo_img">
+                  <img src={logo.image} alt="logo" className={logo.imgClass} />
+                </div>
               ) : (
                 <span className={logo.class}></span>
               )}

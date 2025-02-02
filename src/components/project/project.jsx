@@ -14,7 +14,6 @@ export function Project() {
     setIsModalOpen(true); 
   };
   const { t } = useTranslation();
-  console.log(portfolio);
   
   return (
     <div className="section projects">

@@ -46,8 +46,13 @@
   font-size: 25px;
   background: #373b40;
   color: white;
+  margin-top: 8px;
 }
-
+.logo_image, img{
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+}
 @media (max-width: 1199px) {
   .mouse-btn {
     margin: 50px 0px 0px 10px;

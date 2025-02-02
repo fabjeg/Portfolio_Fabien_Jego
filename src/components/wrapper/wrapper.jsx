@@ -1,6 +1,6 @@
 import { Footer } from '../footer/footer'
 import { About } from '../about/about'
-import { Background } from '../bacground/background'
+import { Background } from '../background/background'
 import { Competence } from '../competence/competence'
 import { Project } from '../project/project'
 import { Started } from '../started/started'

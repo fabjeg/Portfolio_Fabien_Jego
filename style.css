@@ -23,3 +23,20 @@ main, body {
     margin: 0;
     padding: 0;
   }
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #373B40; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #68E0CF; 
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #68E0CF; 
+}

@@ -3,19 +3,21 @@ import './style.css';
 
 export function Footer() {
     const logos = [
-        'fa fa-github',
-        'fa fa-linkedin-square'
+        { class: 'fa fa-github', url: 'https://github.com/fabjeg' },
+        { class: 'fa fa-linkedin-square', url: 'https://www.linkedin.com/in/fabien-jego-2b286230a/' }
     ];
 
     return (
         <div className="container-footer">
             <div className="containerLogo">
-            {logos.map((logoClass, index) => (
-                <div key={index} className="logo_footer">
-                    <span className={logoClass}></span>
-                </div>
-            ))}
-                </div>
+                {logos.map((logo, index) => (
+                    <div key={index} className="logo_footer">
+                        <a href={logo.url} target="_blank" rel="noopener noreferrer">
+                            <span className={logo.class}></span>
+                        </a>
+                    </div>
+                ))}
+            </div>
             <ButtonScrollTop />
         </div>
     );

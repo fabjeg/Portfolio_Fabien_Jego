@@ -16,10 +16,13 @@ export function Modal({ project, setIsModalOpen }) {
     <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="containerButtonClose">
-        <button className="fa-solid fa-xmark buttonClose" onClick={() => setIsModalOpen(false)}/>
+          <button
+            className="fa-solid fa-xmark buttonClose"
+            onClick={() => setIsModalOpen(false)}
+          />
         </div>
         <h3 className="modal-title">{project.name}</h3>
-        
+
         {images.length > 0 && (
           <div className="modal-carousel">
             <Slide
@@ -31,9 +34,13 @@ export function Modal({ project, setIsModalOpen }) {
         )}
 
         <div className="container-modal-description">
-          <p className="modal-description">{t(`portfolio.${project.name}.text`)}</p>
+          <p className="modal-description">
+            {t(`portfolio.${project.name}.text`)}
+          </p>
           {project.identifier && (
-            <p className="modal-description">identifiant: {project.identifier}</p>
+            <p className="modal-description">
+              identifiant: {project.identifier}
+            </p>
           )}
           {project.Mp && (
             <p className="modal-description">Mot de passe: {project.Mp}</p>
@@ -47,7 +54,7 @@ export function Modal({ project, setIsModalOpen }) {
             </span>
           ))}
         </div>
-        
+
         <ButtonModal code={project.code} site={project.site} />
       </div>
     </div>

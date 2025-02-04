@@ -30,7 +30,7 @@ export function NavBar() {
     { name: t("about"), link: "#about" },
     { name: t("formation"), link: "#formation" },
     { name: t("compétences"), link: "#competences" },
-    { name: t("projects"), link: "#projets" },
+    { name: t("projets"), link: "#projets" },
     { name: "Contact", link: "#contact" },
   ];
 

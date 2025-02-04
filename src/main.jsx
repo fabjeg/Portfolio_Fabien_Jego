@@ -1,8 +1,8 @@
-import { StrictMode } from 'react'; // Importe React et StrictMode
-import { createRoot } from 'react-dom/client'; // Importe createRoot
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Container } from './components/container/container.jsx';
-import '../il8n.js'; // Assure-toi d'importer aussi i18n
+import '../il8n.js'; 
 import '../style.css'
 
 createRoot(document.getElementById('root')).render(

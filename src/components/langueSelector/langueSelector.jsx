@@ -6,7 +6,7 @@ export function LanguageSelector() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    localStorage.setItem('language', lng); // Sauvegarde la langue sélectionnée
+    localStorage.setItem('language', lng); 
   };
 
   return (

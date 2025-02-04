@@ -1,6 +1,5 @@
 import { ButtonContact } from "../buttons/button-contact";
 import { ButtonCv } from "../buttons/button-cv";
-import { LanguageSelector } from "../langueSelector/langueSelector";
 import "./style.css";
 import { useTranslation } from 'react-i18next';
 
@@ -14,9 +13,6 @@ export function Started() {
             <h1 className="h-title">
               Fabien <br /> JÉGO
             </h1>
-            <div className="selectLanguage">
-            <LanguageSelector/>
-            </div>
             <div className="buttonCv">
               <ButtonCv />
             </div>

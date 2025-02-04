@@ -4,7 +4,7 @@
   bottom: 40px;
   right: 0;
   width: 140px;
-  height: 50%;
+  height: 76%;
   z-index: 99;
   display: flex;
   flex-direction: column;
@@ -49,8 +49,8 @@
   margin-top: 8px;
 }
 .unique-logo-img {
-  width: 60px;  
-  height: 60px; 
+  width: 60px;
+  height: 60px;
   margin-top: 8px;
 }
 @media (max-width: 1199px) {
@@ -75,5 +75,8 @@
     top: -22%;
     width: 100%;
     gap: 10%;
+  }
+  .languageButton{
+    display: none;
   }
 }

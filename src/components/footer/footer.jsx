@@ -1,6 +1,7 @@
 import { ButtonScrollTop } from "../buttons/button-scrool-top";
 import "./style.css";
 import logoOpen from "../../assets/icons/OpenClassRoom-icon.webp";
+import { LanguageSelector } from "../langueSelector/langueSelector";
 
 export function Footer() {
   const logos = [
@@ -19,6 +20,9 @@ export function Footer() {
 
   return (
     <div className="container-footer">
+      <div className="languageButton">
+      <LanguageSelector/>
+      </div>
       <div className="containerLogo">
         {logos.map((logo, index) => (
           <div key={index} className="logo_footer">

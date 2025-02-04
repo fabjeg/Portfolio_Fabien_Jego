@@ -55,11 +55,11 @@ const picturesSlide = [
     img: [],
   },
   {
-    name: "Argent Bank Redux",
+    name: "Argent Bank Redux Toolkit",
     img: [argenB1, argenB],
   },
   {
-    name: "Argent Bank Redux Toolkit",
+    name: "Argent Bank Redux",
     img: [abr1, abr2, abr3],
   },
   {

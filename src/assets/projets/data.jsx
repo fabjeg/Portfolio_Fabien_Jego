@@ -56,7 +56,7 @@ const portfolio = [
     code: "https://github.com/fabjeg/ArgentBank",
     site: "https://fabjeg.github.io/ArgentBank-Redux/",
     competences: ["React", "Redux Toolkit", "MongoDB"],
-    images: findImages("Argent Bank Redux Toolkit"),
+    images: findImages("Argent Bank Redux"),
   },
   {
     id: "b4c67937",
@@ -65,7 +65,7 @@ const portfolio = [
     code: "https://github.com/fabjeg/ArgentBank-Redux",
     site: "https://fabjeg.github.io/ArgentBank-Redux/",
     competences: ["React", "Redux", "MongoDB"],
-    images: findImages("Argent Bank Redux"),
+    images: findImages("Argent Bank Redux Toolkit"),
   },
   {
     id: "c67ab8a7",

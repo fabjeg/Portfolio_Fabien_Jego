@@ -102,6 +102,9 @@
  .modal-title{
   font-size: 1.6rem;
  }
+ .span-competences{
+  font-size: 10px;
+ }
 }
 .container-modal-description{
   width: 70%;

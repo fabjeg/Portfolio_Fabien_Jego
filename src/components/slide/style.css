@@ -1,29 +1,67 @@
-.carousel-img{
-  width: 70%;
-  border-radius: 3rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  opacity: 0.8;
-  object-fit: cover;
-}
-.carousel-btn {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #333;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.carousel-controls {
+/* Conteneur principal */
+.carousel-overlay {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+/* Conteneur du carrousel */
+.carousel-container {
+  position: relative;
+  width: 80vw; /* 80% de la largeur de l'écran */
+  height: 60vh; /* 60% de la hauteur de l'écran */
+  max-width: 700px; /* Largeur maximale */
+  max-height: 500px; /* Hauteur maximale */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #0000004d;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
+/* Image du carrousel */
+.carousel-img {
+  width: 100%; /* L'image prendra 100% de la largeur du conteneur */
+  height: 100%; /* L'image prendra 100% de la hauteur du conteneur */
+  object-fit: contain; /* L'image se redimensionne pour garder son ratio */
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  border-radius: 10px;
+}
 .carousel-arrow {
-  border: none;
+  position: absolute;
+  top: 50%;
+  font-size: 5vw;
+  color: black;
   background: transparent;
-  font-size: 40px;
-  color: white;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.carousel-arrow.left {
+  left: 2vw;
+}
+.carousel-arrow.right {
+  right: 2vw;
+}
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 90vw;
+    height: 50vh;
+  }
+  .carousel-arrow {
+    font-size: 7vw;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 95vw;
+    height: 40vh;
+  }
+  .carousel-arrow {
+    font-size: 10vw;
+  }
 }

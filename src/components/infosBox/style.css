@@ -29,7 +29,7 @@ table {
   .container-informations{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
   }
   .info-box{
     width: 74%;
@@ -44,7 +44,7 @@ table {
   .container-informations{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
   }
   .info-label{
     font-size: 10px;

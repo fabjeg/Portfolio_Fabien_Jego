@@ -13,9 +13,6 @@ export function Started() {
             <h1 className="h-title">
               Fabien <br /> JÉGO
             </h1>
-            <div className="buttonCv">
-              <ButtonCv />
-            </div>
           </div>
           <h2 className="h2-title">{t('developerTitle')}</h2>
           <article>

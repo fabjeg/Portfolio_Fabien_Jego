@@ -104,3 +104,8 @@
 .container-modal-description{
   width: 70%;
 }
+@media only screen and (max-width: 770px) {
+ .span-competences{
+  width: 100%;
+ }
+}

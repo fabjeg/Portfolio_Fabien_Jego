@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./navbar.css";
-import { ButtonCv } from "../buttons/button-cv";
 import { useTranslation } from "react-i18next";
 import { LanguageSelector } from "../langueSelector/langueSelector";
 
@@ -37,7 +36,6 @@ export function NavBar() {
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
       <div className="button_cv_navbar">
-        <ButtonCv />
       </div>
       <div className="buttonLanguage">
         <LanguageSelector/>

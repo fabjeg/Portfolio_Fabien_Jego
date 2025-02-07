@@ -23,6 +23,7 @@ export function Started() {
           </article>
           <div className="buton-started">
             <ButtonContact />
+            <ButtonCv/>
           </div>
         </div>
       </div>

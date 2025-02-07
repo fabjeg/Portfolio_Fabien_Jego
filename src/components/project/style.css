@@ -21,7 +21,6 @@
     font-size: 45px;
     text-decoration: underline;
 }
-/* Conteneur global des cartes */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +50,6 @@
 .card-content:hover .card-content2{
   opacity: 0.7;
 }
-/* Styles pour chaque carte */
 .card {
   width: 300px;
   height: 300px;
@@ -60,9 +58,9 @@
   cursor: pointer;
   overflow: hidden;
   background-color: #fff;
-  perspective: 1000px; /* Permet l'effet 3D */
+  perspective: 1000px;
   transform-style: preserve-3d;
-  transition: transform 0.1s ease-out; /* Transition rapide pour un effet naturel */
+  transition: transform 0.1s ease-out;
 }
 .card-content {
   width: 101%;
@@ -70,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  backface-visibility: hidden; /* Cache l'arrière de la carte */
+  backface-visibility: hidden;
 }
 
 .card-image img{

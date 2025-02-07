@@ -1,10 +1,9 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import PropTypes from "prop-types";
 import "./style.css";
 
 export function Slide({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const delay = 3000;
 
   const changeImage = useCallback(
     (step) => {
@@ -12,10 +11,6 @@ export function Slide({ images }) {
     },
     [images.length]
   );
-  useEffect(() => {
-    const timeout = setTimeout(() => changeImage(1), delay);
-    return () => clearTimeout(timeout);
-  }, [changeImage]);
 
   return (
     <div className="carousel-overlay">

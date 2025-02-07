@@ -6,8 +6,8 @@ export function About() {
   const { t } = useTranslation();
 
   return (
-    <div className="section about">
-      <h3 className="h3-title" id='about'>
+    <div className="section about" id='about'>
+      <h3 className="h3-title">
         {t('aboutTitle')}
       </h3>
       <article className='article-about'>

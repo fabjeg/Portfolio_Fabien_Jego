@@ -1,18 +1,14 @@
-/* Conteneur principal */
 .carousel-overlay {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
 }
-
-/* Conteneur du carrousel */
 .carousel-container {
   position: relative;
-  width: 80vw; /* 80% de la largeur de l'écran */
-  height: 60vh; /* 60% de la hauteur de l'écran */
-  max-width: 700px; /* Largeur maximale */
-  max-height: 500px; /* Hauteur maximale */
+  width: 100%; 
+  height: 60vh;
+  max-width: 700px;
+  max-height: 500px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px #0000004d;
@@ -20,12 +16,10 @@
   justify-content: center;
   align-items: center;
 }
-
-/* Image du carrousel */
 .carousel-img {
-  width: 100%; /* L'image prendra 100% de la largeur du conteneur */
-  height: 100%; /* L'image prendra 100% de la hauteur du conteneur */
-  object-fit: contain; /* L'image se redimensionne pour garder son ratio */
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain;
   background: #0f2027;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
@@ -34,7 +28,7 @@
 .carousel-arrow {
   position: absolute;
   top: 50%;
-  font-size: 5vw;
+  font-size: 2vw;
   color: black;
   background: transparent;
   border: none;
@@ -42,14 +36,13 @@
   transform: translateY(-50%);
 }
 .carousel-arrow.left {
-  left: 2vw;
+  left: 0vw;
 }
 .carousel-arrow.right {
-  right: 2vw;
+  right: 0vw;
 }
 @media (max-width: 768px) {
   .carousel-container {
-    width: 90vw;
     height: 50vh;
   }
   .carousel-arrow {
@@ -58,10 +51,9 @@
 }
 @media (max-width: 480px) {
   .carousel-container {
-    width: 95vw;
     height: 40vh;
   }
   .carousel-arrow {
-    font-size: 10vw;
+    font-size: 3vw;
   }
 }

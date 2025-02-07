@@ -17,7 +17,7 @@
   padding: 20px;
   border-radius: 8px;
   max-width: 90%;
-  max-height: 90%;
+  height: 100%;
   overflow-y: auto; 
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   color: white;
   font-family: 'poppins';
   text-decoration: underline;
@@ -55,18 +55,13 @@
   
   text-align: left;
 }
-.modal-content::-webkit-scrollbar {
-  width: 10px;
-}
-.modal-content::-webkit-scrollbar-thumb {
-  display: none;
-}
 .close-btn{
   border: none;
   background: transparent;
 }
 .container-comp{
   display: flex;
+  justify-content: center;
   gap: 15%;
   width: 100%;
 }
@@ -76,7 +71,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 10%;
   overflow: hidden;
   height: 3rem;
   background-size: 300% 300%;

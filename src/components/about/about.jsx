@@ -14,9 +14,6 @@ export function About() {
         {t('aboutContent')}
         <br/>
       </article>
-      <article>
-        Techno: html css javascript react 
-      </article>
       <InfoBox />
     </div>
   );

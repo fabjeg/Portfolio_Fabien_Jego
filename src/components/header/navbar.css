@@ -1,19 +1,16 @@
-
 .navbar {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   position: fixed;
   width: 100%;
   min-height: 75px;
-  background-color: #585D65;
+  background-color: #585d65;
   color: white;
   z-index: 200;
   border-radius: 3rem;
   font-size: 20px;
   top: 0;
+  justify-content: center;
 }
 
 ul {
@@ -65,7 +62,7 @@ a {
 .navbar_link:hover::after {
   right: 0;
 }
-.navbar_link:hover{
+.navbar_link:hover {
   color: #68e0cf;
 }
 .navbar__burguer {
@@ -75,16 +72,17 @@ a {
   color: inherit;
   border: none;
 }
-.buttonLanguage{
+.buttonLanguage {
   display: none;
 }
 @media screen and (max-width: 1200px) {
   .navbar {
     background: transparent;
+    justify-content: flex-start;
   }
-.navbarlogo{
-  display: none;
-}
+  .navbarlogo {
+    display: none;
+  }
   .navbar_links {
     display: flex;
     flex-direction: column;
@@ -95,12 +93,12 @@ a {
     width: 100%;
     height: 100vh;
     padding: 2rem;
-    background-color: #373B40;
+    background-color: #373b40;
     visibility: hidden;
-    transition: all .8s ease-out;
-    
-  overflow: hidden;
-  touch-action: none;
+    transition: all 0.8s ease-out;
+
+    overflow: hidden;
+    touch-action: none;
   }
 
   .show-nav .navbar_links {
@@ -151,7 +149,7 @@ a {
     position: relative;
     border-radius: 3px;
     background: white;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .burguer-bar::before,
@@ -205,11 +203,8 @@ a {
   .show-nav .slideInDown-5 {
     transition: all 1.4s ease-out;
   }
-  .buttonLanguage{
+  .buttonLanguage {
     display: block;
-  }
-  .button_cv_navbar{
-    display: none;
   }
   .navbar_link::before,
   .navbar_link::after {

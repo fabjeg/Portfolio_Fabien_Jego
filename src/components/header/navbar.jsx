@@ -35,8 +35,6 @@ export function NavBar() {
 
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <div className="button_cv_navbar">
-      </div>
       <div className="buttonLanguage">
         <LanguageSelector/>
       </div>

@@ -12,6 +12,10 @@ export function About() {
       </h3>
       <article className='article-about'>
         {t('aboutContent')}
+        <br/>
+      </article>
+      <article>
+        Techno: html css javascript react 
       </article>
       <InfoBox />
     </div>

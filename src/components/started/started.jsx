@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 export function Started() {
   const { t } = useTranslation();
   return (
-    <div className="section started">
+    <div className="section started"  id="home">
       <div className="centrize full-width">
         <div className="vertical-center">
           <div className="container-title">

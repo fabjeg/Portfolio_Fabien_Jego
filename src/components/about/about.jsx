@@ -12,7 +12,6 @@ export function About() {
       </h3>
       <article className='article-about'>
         {t('aboutContent')}
-        <br/>
       </article>
       <InfoBox />
     </div>

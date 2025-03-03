@@ -18,12 +18,12 @@
   "ville": "City",
   "Téléphone": "Phone",
   "Entreprise": "Company",
-  "sujet": "subject",
-  "errorMessage": " Please fill in all required fields correctly.",
+  "sujet": "Subject",
+  "errorMessage": "Please fill in all required fields correctly.",
   "errorMessageName": "The name is required.",
   "errorMessageEmail": "E-mail is required.",
-  "errorMessagecompagny": "Company name required.",
-  "errorMessagesubject": "The subject is required.",
+  "errorMessageCompany": "Company name required.",
+  "errorMessageSubject": "The subject is required.",
   "errorMessageMessage": "The message is required.",
   "envoyer": "Send",
   "setMessage": "Your message has been sent!",
@@ -32,34 +32,34 @@
   "buttonDiplome": "Professional Title",
   "portfolio": {
     "OhMyFood": {
-      "text": " As part of my training as a Front-End developer, I was tasked with creating a 'mobile-first' site listing the menus of high-end restaurants for the OhMyFood project. Customers can pre-order their meal to avoid queues. Four restaurateurs were simulated as partners. I ensured responsive design and integrated elegant animations to provide an optimal user experience. This experience allowed me to demonstrate my skills in web design and the creation of attractive and functional user interfaces."
+      "text": "During my Front-End developer training, I created a 'mobile-first' website for the OhMyFood project. This platform lists high-end restaurant menus and allows customers to pre-order meals to skip queues. I ensured a fully responsive design and integrated refined animations for an enhanced user experience. This project highlighted my expertise in web design and crafting engaging, functional interfaces."
     },
     "Kasa": {
-      "text": "As part of my training as a Front-End developer, I participated in a simulation project where I was tasked with working with Kasa, a peer-to-peer apartment rental platform in France. My mission was to completely redesign their website using React. Even without access to the back-end, I was able to develop the entire application by creating React components and routing with React Router, thereby demonstrating my ability to handle complex projects and find creative solutions despite constraints."
+      "text": "As part of my training, I worked on Kasa, a peer-to-peer apartment rental platform in France. My task was to revamp their website using React. Despite having no back-end access, I built the entire application by developing reusable components and implementing routing with React Router. This project demonstrated my ability to handle complex interfaces and problem-solve creatively."
     },
     "724events": {
-      "text": "As part of my training as a Front-End developer, I was tasked by the event agency 724events to troubleshoot bugs and finalize their showcase website. This project had initially been started by another developer. I took over the work by fixing bugs and completing the test plan to ensure flawless operation. This experience allowed me to demonstrate my debugging and project finalization skills while meeting client expectations."
+      "text": "I collaborated with 724events, an event agency, to debug and finalize their showcase website. The project had been started by another developer, and I stepped in to fix issues and complete the test plan, ensuring flawless functionality. This experience refined my debugging skills and ability to bring projects to completion while meeting client expectations."
     },
     "Nina Carducci": {
-      "text": "As part of my training as a Front-End developer, I was tasked with offering SEO optimization services to Nina Carducci, a photographer. After conducting an audit of her site, I identified loading speed and structure issues. I proposed to solve these problems by optimizing the images and code of the site. My goal was to improve her search engine ranking and increase her visibility. This experience allowed me to demonstrate my skills in SEO and website optimization for better search engine ranking."
+      "text": "For photographer Nina Carducci, I conducted an SEO audit to identify performance bottlenecks. I optimized images and refined the site’s code to enhance loading speed and structure. My goal was to boost search engine rankings and improve online visibility. This project strengthened my expertise in SEO and website performance optimization."
     },
     "Argent Bank Redux Toolkit": {
-      "text": "As part of my training as a Front-End developer, I was tasked with working on a simulated project for Argent Bank. I worked on creating the user dashboard in two phases. The first phase involved building a responsive web application using React, leveraging Redux for state management. In the second phase, I worked on designing transactions and provided Swagger specifications for the associated API routes. This experience allowed me to develop my skills in Front-End development, state management with Redux, and API documentation with Swagger."
+      "text": "As part of a simulated project for Argent Bank, I developed a user dashboard in two phases. Initially, I built a responsive web application using React and Redux for state management. Later, I designed the transaction interface and provided API documentation via Swagger. This experience solidified my knowledge of Front-End development, state management, and API specifications."
     },
     "Argent Bank Redux": {
-      "text": "As part of my training as a Front-End developer, I participated in a simulation project for Argent Bank. I was tasked with creating the user dashboard in two phases. The first phase involved developing a responsive web application using React, leveraging Redux for state management. In the second phase, I simulated back-end modifications by creating three new routes: a POST route to send data to MongoDB, a GET route to retrieve data, and a PUT route to modify transaction types. I also worked on the new design of the site, integrating visual updates to enhance the user interface. This experience allowed me to develop my skills in full-stack development and project management."
+      "text": "In another Argent Bank project, I was responsible for creating the user dashboard. The first phase involved developing a React-based web app with Redux for state handling. In the second phase, I simulated back-end updates by implementing three new routes: POST for data submission, GET for retrieval, and PUT for modifying transactions in MongoDB. Additionally, I introduced a new UI design, refining the user experience. This project deepened my understanding of full-stack development and interface redesign."
     },
     "Booki": {
-      "text": "As part of my training as a web developer, I participated in a simulation project for Booki. I integrated the site's interface using HTML and CSS, in collaboration with Sarah, the CTO, and Loïc, the UI designer. I worked on complete mockups for desktop, tablet, and mobile versions, respecting technical specifications and constraints. I received a prepared file structure to start, which allowed me to focus on integration and implementation of the designs. This experience allowed me to refine my Front-End development skills and responsive design."
+      "text": "For the Booki project, I handled website integration using HTML and CSS. Collaborating with Sarah, the CTO, and Loïc, the UI designer, I developed fully responsive mockups for desktop, tablet, and mobile. A structured file system was provided, allowing me to focus on design implementation. This project reinforced my skills in Front-End development and responsive web design."
     },
     "Portfolio architecte": {
-      "text": "As part of my training as a Front-End developer, I participated in a simulation project at ArchiWebos. I contributed to the design of the portfolio site for Sophie Bluel, an interior architect. My role involved creating the presentation page, the administrator login page, and a media upload modal. This experience allowed me to demonstrate my skills in Front-End development and interactive web design, while working on projects with specific and detailed requirements."
+      "text": "At ArchiWebos, I worked on the portfolio site of interior architect Sophie Bluel. My role involved designing the presentation page, admin login, and a media upload modal. This experience allowed me to refine my skills in Front-End development and interactive UI design while adhering to specific project requirements."
     },
     "Portfolio": {
-      "text": "This project, completed as part of my training, is a web application developed with React, one of the most popular and efficient JavaScript frameworks for building user interfaces. This portfolio showcases my Front-End development skills, particularly in component manipulation and the use of hooks for effective lifecycle management of components."
+      "text": "This personal project, developed during my training, showcases my expertise in React. The portfolio is a fully responsive web application, demonstrating my ability to create reusable components and manage application state with hooks. It serves as a reflection of my technical skills in modern web development."
     },
     "NFT": {
-      "text": "I created this showcase site using React to offer an interactive and modern experience. The various carousels, created with Swiper, allow for easy navigation through my projects and achievements. Furthermore, the site is fully responsive, ensuring an optimal experience on all devices, whether mobile, tablet, or desktop."
+      "text": "I developed this showcase website using React to deliver an interactive and modern experience. Featuring Swiper-powered carousels, the site allows smooth navigation through projects and achievements. With full responsiveness, it ensures seamless performance across mobile, tablet, and desktop devices."
     }
   }
 }

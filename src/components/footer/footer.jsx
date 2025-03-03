@@ -8,7 +8,7 @@ export function Footer() {
     { class: "fa fa-github", url: "https://github.com/fabjeg" },
     {
       class: "fa fa-linkedin-square",
-      url: "https://www.linkedin.com/in/fabien-jego-2b286230a/",
+      url: "https://www.linkedin.com/in/fabien-jégo-2b286230a",
     },
     {
       class: null,

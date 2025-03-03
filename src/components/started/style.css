@@ -83,10 +83,19 @@ article {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20%;
 }
 .selectLanguage{
   margin-top: 30%;
+}
+.container-strong{
+  width: 70%;
+}
+ .strong{
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 800;;
+  display: flex;
+  margin-top: 55%;
 }
 @media (max-width: 1199px) {
   .section {
@@ -129,5 +138,8 @@ article {
   .original{
     background-color: #373B40;
     border-radius: 10px ;
+  }
+  .strong{
+margin: 0;
   }
 }

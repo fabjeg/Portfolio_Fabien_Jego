@@ -7,6 +7,7 @@ import Ninacarducci from "../images/Ninacarucci.png";
 import Argentbank from "../images/Argentbank.png";
 import picturesSlide from './dataSlide';
 import Portfolio from '../images/portfolio.png'
+import nft from '../images/nft.png'
 
 const findImages = (name) => {
   const item = picturesSlide.find((item) => item.name === name);
@@ -95,6 +96,15 @@ const portfolio = [
     site: "https://portfolio-fabiens-projects-3e207d58.vercel.app/",
     competences: [ "CSS", "React"],
     images: findImages("Portfolio architecte"),
+  },
+  {
+    id: "46d188c9",
+    name: "NFT",
+    image: [nft],
+    code: "https://github.com/fabjeg/dummysiteNFT",
+    site: "https://dummysite-nft.vercel.app/",
+    competences: [ "CSS", "React"],
+    images: findImages("NFT"),
   },
 ];
 

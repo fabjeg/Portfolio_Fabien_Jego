@@ -28,6 +28,9 @@ import port2 from "../images/slide/portfolio/portfolio(2).png"
 import port3 from "../images/slide/portfolio/portfolio(3).png"
 import port4 from "../images/slide/portfolio/portfolio(4).png"
 import port5 from "../images/slide/portfolio/portfolio(5).png"
+import nft from '../images/slide/nft/nft.png'
+import nft1 from '../images/slide/nft/nft1.png'
+import nft2 from '../images/slide/nft/nft2.png'
 
 const picturesSlide = [
   {
@@ -65,6 +68,10 @@ const picturesSlide = [
   {
     name: "Portfolio",
     img: [port, port2, port3, port4, port5],
+  },
+  {
+    name: "NFT",
+    img: [nft, nft1, nft2],
   },
 ];
 

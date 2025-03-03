@@ -6,6 +6,7 @@
   "cvButton": "Mon CV",
   "contactButton": "Contactez-moi",
   "name": "Fabien JÉGO",
+  "search": "Recherche d'une alternance en tant que développeur web",
   "title": "Développeur Front-End",
   "description": "Je suis un développeur web Front-End passionné par la technologie et le développement. Diplômé d'une formation intensive de 9 mois chez OpenClassrooms en tant qu'intégrateur web, j'ai acquis des compétences solides et un niveau de connaissances équivalent à un Bac+2, me permettant de mener à bien des projets ambitieux et soignés.",
   "projets": "Projets",
@@ -57,6 +58,9 @@
     },
     "Portfolio": {
       "text": "Ce projet, réalisé dans le cadre de ma formation, est une application web développée avec React, l'un des frameworks JavaScript les plus populaires et performants pour construire des interfaces utilisateur. Ce portfolio met en avant mes compétences en développement Front-End, notamment en manipulation des composants et en utilisation des hooks pour une gestion efficace du cycle de vie des composants."
+    },
+    "NFT": {
+      "text": "J'ai créé ce site vitrine en utilisant React pour offrir une expérience interactive et moderne. Les différents carrousels, réalisés avec Swiper. De plus, le site est entièrement responsive, garantissant une expérience optimale sur tous les appareils, qu'ils soient mobiles, tablettes ou ordinateurs."
     }
   }
 }

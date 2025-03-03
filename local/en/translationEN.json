@@ -57,6 +57,9 @@
     },
     "Portfolio": {
       "text": "This project, completed as part of my training, is a web application developed with React, one of the most popular and efficient JavaScript frameworks for building user interfaces. This portfolio showcases my Front-End development skills, particularly in component manipulation and the use of hooks for effective lifecycle management of components."
+    },
+    "NFT": {
+      "text": "I created this showcase site using React to offer an interactive and modern experience. The various carousels, created with Swiper, allow for easy navigation through my projects and achievements. Furthermore, the site is fully responsive, ensuring an optimal experience on all devices, whether mobile, tablet, or desktop."
     }
   }
 }

@@ -1,5 +1,5 @@
 import './style.css'
-import ResumePDF from '../../assets/C.V.pdf'
+import ResumePDF from '../../assets/C.V_FABIEN_JÉGO.pdf'
 
 import styled from 'styled-components';
 

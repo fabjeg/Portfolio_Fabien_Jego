@@ -13,15 +13,22 @@ export function Modal({ project, setIsModalOpen }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { t } = useTranslation();
   return (
-    <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
+    <div
+      className="modal-overlay"
+      onClick={() => setIsModalOpen(false)}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="containerButtonClose">
           <button
             className="fa-solid fa-xmark buttonClose"
             onClick={() => setIsModalOpen(false)}
+            aria-label="Fermer la modale"
           />
         </div>
-        <h3 className="modal-title">{project.name}</h3>
+        <h3 id="modal-title" className="modal-title">{project.name}</h3>
 
         {images.length > 0 && (
           <div className="modal-carousel">
@@ -62,6 +69,16 @@ export function Modal({ project, setIsModalOpen }) {
 }
 
 Modal.propTypes = {
-  project: PropTypes.object.isRequired,
+  project: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    image: PropTypes.arrayOf(PropTypes.string).isRequired,
+    code: PropTypes.string.isRequired,
+    site: PropTypes.string.isRequired,
+    competences: PropTypes.arrayOf(PropTypes.string).isRequired,
+    images: PropTypes.arrayOf(PropTypes.string),
+    identifier: PropTypes.string,
+    Mp: PropTypes.string,
+  }).isRequired,
   setIsModalOpen: PropTypes.func.isRequired,
 };

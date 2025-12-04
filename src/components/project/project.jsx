@@ -44,18 +44,35 @@ function Card3D({ image, onClick, name }) {
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
-    const rotateX = (y / rect.height - 0.5) * 40;
-    const rotateY = (x / rect.width - 0.5) * -40;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * 20;
+    const rotateY = ((x - centerX) / centerX) * 20;
+
+    const shadowX = ((x - centerX) / centerX) * 20;
+    const shadowY = ((y - centerY) / centerY) * 20;
 
     setStyle({
-      transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`,
+      transform: `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`,
+      boxShadow: `${shadowX}px ${shadowY}px 40px rgba(0, 0, 0, 0.5)`,
+      transition: 'transform 0.1s ease, box-shadow 0.1s ease',
     });
   };
 
   const handleMouseLeave = () => {
     setStyle({
-      transform: "rotateX(0) rotateY(0) scale(1)",
+      transform: "perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)",
+      boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 8px rgba(0, 0, 0, 0.2)",
+      transition: 'all 0.3s ease',
     });
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onClick();
+    }
   };
 
   return (
@@ -64,10 +81,14 @@ function Card3D({ image, onClick, name }) {
       style={style}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      onClick={onClick} 
+      onClick={onClick}
+      onKeyDown={handleKeyDown}
+      role="button"
+      tabIndex={0}
+      aria-label={`Voir les détails du projet ${name}`}
     >
       <div className="card-content">
-        <img src={image} alt="project-pictures" className="card-image" />
+        <img src={image} alt={`Aperçu du projet ${name}`} className="card-image" />
         <div className='card-content2 '>{name}</div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { FR, GB } from 'country-flag-icons/react/3x2';
 import './style.css';
 
 export function LanguageSelector() {
@@ -6,15 +7,34 @@ export function LanguageSelector() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    localStorage.setItem('language', lng); 
+    localStorage.setItem('language', lng);
   };
+
+  const currentLang = i18n.language;
 
   return (
     <div className="language-container">
-      <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={i18n.language} className='select_button'>
-        <option value="en" className='select_option'>English</option>
-        <option value="fr" className='select_option'>Français</option>
-      </select>
+      <div className="language-toggle">
+        <div className={`toggle-slider ${currentLang === 'en' ? 'slide-right' : 'slide-left'}`}></div>
+        <button
+          onClick={() => changeLanguage('fr')}
+          className={`toggle-option ${currentLang === 'fr' ? 'active' : ''}`}
+          aria-label="Français"
+          title="Français"
+        >
+          <FR className="flag-icon-toggle" />
+          <span className="toggle-text">FR</span>
+        </button>
+        <button
+          onClick={() => changeLanguage('en')}
+          className={`toggle-option ${currentLang === 'en' ? 'active' : ''}`}
+          aria-label="English"
+          title="English"
+        >
+          <GB className="flag-icon-toggle" />
+          <span className="toggle-text">EN</span>
+        </button>
+      </div>
     </div>
   );
 }

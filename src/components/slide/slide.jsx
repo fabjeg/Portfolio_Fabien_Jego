@@ -14,16 +14,24 @@ export function Slide({ images }) {
 
   return (
     <div className="carousel-overlay">
-      <div className="carousel-container">
-        <button onClick={() => changeImage(-1)} className="carousel-arrow left">
+      <div className="carousel-container" role="region" aria-label="Carrousel d'images">
+        <button
+          onClick={() => changeImage(-1)}
+          className="carousel-arrow left"
+          aria-label="Image précédente"
+        >
           ❮
         </button>
         <img
           src={images[currentIndex]}
-          alt={`Slide ${currentIndex}`}
+          alt={`Slide ${currentIndex + 1} sur ${images.length}`}
           className="carousel-img"
         />
-        <button onClick={() => changeImage(1)} className="carousel-arrow right">
+        <button
+          onClick={() => changeImage(1)}
+          className="carousel-arrow right"
+          aria-label="Image suivante"
+        >
           ❯
         </button>
       </div>

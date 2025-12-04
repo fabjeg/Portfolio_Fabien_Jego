@@ -1,20 +1,193 @@
-.select_button {
+.language-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Toggle Switch Style */
+.language-toggle {
+  position: relative;
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.15),
+    inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Slider animé */
+.toggle-slider {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(50% - 5px);
+  height: calc(100% - 10px);
+  background: linear-gradient(135deg, #68e0cf 0%, #5ac8b8 100%);
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  box-shadow:
+    0 4px 12px rgba(104, 224, 207, 0.5),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.toggle-slider.slide-left {
+  transform: translateX(0);
+}
+
+.toggle-slider.slide-right {
+  transform: translateX(calc(100% + 5px));
+}
+
+/* Options du toggle */
+.toggle-option {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
   border: none;
-  background:#68e0cf;
-  letter-spacing: 2px;
-  color: white;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 10px 4px;
-  border-radius: 3rem;
+  background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
-  outline: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  min-width: 80px;
+  border-radius: 50px;
 }
-.select_option {
-  font-weight: bold;
-  background: white;
-  color: #333;
+
+.toggle-option:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+}
+
+.toggle-option.active {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Icônes drapeaux */
+.flag-icon-toggle {
+  width: 26px;
+  height: 20px;
+  border-radius: 4px;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.3),
+    0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.toggle-option:hover .flag-icon-toggle {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-option.active .flag-icon-toggle {
+  transform: scale(1.15);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Texte des langues */
+.toggle-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/* Animation pulse pour le bouton actif */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow:
+      0 4px 12px rgba(104, 224, 207, 0.5),
+      0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 6px 20px rgba(104, 224, 207, 0.7),
+      0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.toggle-slider {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .language-toggle {
+    padding: 4px;
+    transform: scale(0.9);
+  }
+
+  .toggle-slider {
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+  }
+
+  .toggle-slider.slide-right {
+    transform: translateX(calc(100% + 4px));
+  }
+
+  .toggle-option {
+    padding: 8px 12px;
+    font-size: 12px;
+    gap: 5px;
+    min-width: 65px;
+  }
+
+  .flag-icon-toggle {
+    width: 20px;
+    height: 15px;
+  }
+
+  .toggle-text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .language-toggle {
+    padding: 3px;
+    transform: scale(0.85);
+  }
+
+  .toggle-option {
+    padding: 6px 10px;
+    font-size: 11px;
+    gap: 4px;
+    min-width: 60px;
+  }
+
+  .flag-icon-toggle {
+    width: 18px;
+    height: 14px;
+  }
+
+  .toggle-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .language-toggle {
+    transform: scale(0.75);
+  }
+
+  .toggle-option {
+    padding: 5px 8px;
+    min-width: 55px;
+  }
 }

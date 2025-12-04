@@ -34,7 +34,7 @@ export function NavBar() {
   ];
 
   return (
-    <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
+    <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`} role="navigation" aria-label="Navigation principale">
       <div className="buttonLanguage">
         <LanguageSelector/>
       </div>
@@ -48,8 +48,14 @@ export function NavBar() {
   ))}
 </ul>
 
-      <button className="navbar__burguer" onClick={handleShowLinks}>
-        <span className="burguer-bar"></span>
+      <button
+        className="navbar__burger"
+        onClick={handleShowLinks}
+        aria-label={showLinks ? "Fermer le menu" : "Ouvrir le menu"}
+        aria-expanded={showLinks}
+        aria-controls="navbar_links"
+      >
+        <span className="burger-bar"></span>
       </button>
     </nav>
   );
